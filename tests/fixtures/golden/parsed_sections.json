@@ -1,0 +1,195 @@
+{
+  "locking.html": {
+    "title": "Chapter 2. Locking",
+    "all_refs": [
+      "locking",
+      "locking#locking",
+      "locking#locking-advisory",
+      "locking#locking-deadlocks",
+      "locking#locking-rows"
+    ],
+    "sections": [
+      {
+        "ord": 0,
+        "ref": "locking#locking-rows",
+        "refs": [
+          "locking",
+          "locking#locking",
+          "locking#locking-rows"
+        ],
+        "heading_path": [
+          "Chapter 2. Locking",
+          "2.1. Row Locks"
+        ],
+        "body": "A transaction can lock individual rows with SELECT ... FOR UPDATE, which blocks other writers of the same rows until the transaction ends. FOR SHARE takes a weaker lock that still allows other readers to share it.\n\nRow locks are recorded in the row itself rather than in shared memory, so locking many rows does not exhaust the lock table."
+      },
+      {
+        "ord": 1,
+        "ref": "locking#locking-deadlocks",
+        "refs": [
+          "locking",
+          "locking#locking",
+          "locking#locking-deadlocks"
+        ],
+        "heading_path": [
+          "Chapter 2. Locking",
+          "2.2. Deadlocks"
+        ],
+        "body": "A deadlock happens when two transactions each wait for a lock the other one holds. The server checks for deadlocks after a transaction has waited for deadlock_timeout, which is 1 second by default.\n\nWhen a cycle is found, one of the transactions is aborted with an error and the other continues. Applications should retry the aborted transaction and take locks in a consistent order."
+      },
+      {
+        "ord": 2,
+        "ref": "locking#locking-advisory",
+        "refs": [
+          "locking",
+          "locking#locking",
+          "locking#locking-advisory"
+        ],
+        "heading_path": [
+          "Chapter 2. Locking",
+          "2.3. Advisory Locks"
+        ],
+        "body": "Advisory locks have a meaning defined by the application. The server only guarantees that two sessions cannot hold the same advisory lock at once.\n\nFunction | Scope |\n\nledger_advisory_lock | session |\n\nledger_advisory_xact_lock | transaction |\n\nSELECT ledger_advisory_xact_lock(42);"
+      }
+    ]
+  },
+  "search.html": {
+    "title": "Chapter 3. Search Indexes",
+    "all_refs": [
+      "search",
+      "search#search",
+      "search#search-inverted",
+      "search#search-partial",
+      "search#search-tree"
+    ],
+    "sections": [
+      {
+        "ord": 0,
+        "ref": "search#search-tree",
+        "refs": [
+          "search",
+          "search#search",
+          "search#search-tree"
+        ],
+        "heading_path": [
+          "Chapter 3. Search Indexes",
+          "3.1. Tree Indexes"
+        ],
+        "body": "The default index type is a balanced tree. It supports equality and range comparisons such as less than, greater than and between, and it can return rows already sorted, which avoids a separate sort step."
+      },
+      {
+        "ord": 1,
+        "ref": "search#search-inverted",
+        "refs": [
+          "search",
+          "search#search",
+          "search#search-inverted"
+        ],
+        "heading_path": [
+          "Chapter 3. Search Indexes",
+          "3.2. Inverted Indexes"
+        ],
+        "body": "An inverted index stores, for each word, the list of rows that contain it. It is the index type to use for full-text search and for columns that hold arrays.\n\nInverted indexes are slower to update than tree indexes, because one new row can add entries to many word lists."
+      },
+      {
+        "ord": 2,
+        "ref": "search#search-partial",
+        "refs": [
+          "search",
+          "search#search",
+          "search#search-partial"
+        ],
+        "heading_path": [
+          "Chapter 3. Search Indexes",
+          "3.3. Partial Indexes"
+        ],
+        "body": "A partial index covers only the rows that satisfy a WHERE clause given when the index is created. It is smaller than a full index and is useful when queries only ever touch a known subset of rows, for example unpaid orders.\n\nCREATE INDEX orders_unpaid ON orders (customer_id) WHERE paid = false;"
+      }
+    ]
+  },
+  "storage.html": {
+    "title": "Chapter 1. Storage Engine",
+    "all_refs": [
+      "storage",
+      "storage#storage",
+      "storage#storage-pages",
+      "storage#storage-wal",
+      "storage#storage-wal-archiving",
+      "storage#storage-wal-checkpoints"
+    ],
+    "sections": [
+      {
+        "ord": 0,
+        "ref": "storage#storage",
+        "refs": [
+          "storage",
+          "storage#storage"
+        ],
+        "heading_path": [
+          "Chapter 1. Storage Engine"
+        ],
+        "body": "Ledgerline keeps every table in a set of files made of fixed-size pages. This chapter explains how pages are laid out and how changes are made durable."
+      },
+      {
+        "ord": 1,
+        "ref": "storage#storage-pages",
+        "refs": [
+          "storage",
+          "storage#storage",
+          "storage#storage-pages"
+        ],
+        "heading_path": [
+          "Chapter 1. Storage Engine",
+          "1.1. Pages"
+        ],
+        "body": "Every page is 8 kB. A page starts with a 24-byte header that records the page checksum and the position of free space.\n\nRows are stored from the end of the page towards the header, while the array of row pointers grows from the header towards the end. When the two meet, the page is full and a new page is allocated.\n\nSELECT page_size, header_bytes\nFROM ledger_page_info('orders');"
+      },
+      {
+        "ord": 2,
+        "ref": "storage#storage-wal",
+        "refs": [
+          "storage",
+          "storage#storage",
+          "storage#storage-wal"
+        ],
+        "heading_path": [
+          "Chapter 1. Storage Engine",
+          "1.2. Write-Ahead Log"
+        ],
+        "body": "Before a changed page is written to its data file, a record describing the change is appended to the write-ahead log. After a crash, the server replays the log from the last checkpoint to restore every committed change."
+      },
+      {
+        "ord": 3,
+        "ref": "storage#storage-wal-checkpoints",
+        "refs": [
+          "storage",
+          "storage#storage",
+          "storage#storage-wal",
+          "storage#storage-wal-checkpoints"
+        ],
+        "heading_path": [
+          "Chapter 1. Storage Engine",
+          "1.2. Write-Ahead Log",
+          "1.2.1. Checkpoints"
+        ],
+        "body": "A checkpoint flushes all dirty pages to disk so that older log segments can be recycled. By default a checkpoint runs every 5 minutes or when 1 GB of log has been written, whichever comes first."
+      },
+      {
+        "ord": 4,
+        "ref": "storage#storage-wal-archiving",
+        "refs": [
+          "storage",
+          "storage#storage",
+          "storage#storage-wal",
+          "storage#storage-wal-archiving"
+        ],
+        "heading_path": [
+          "Chapter 1. Storage Engine",
+          "1.2. Write-Ahead Log",
+          "1.2.2. Archiving"
+        ],
+        "body": "When archive_mode is on, each completed log segment is handed to archive_command. A segment is only recycled after the command reports success, so a failing archive command makes the log directory grow."
+      }
+    ]
+  }
+}

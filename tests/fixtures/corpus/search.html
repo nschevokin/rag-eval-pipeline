@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Chapter 3. Search Indexes</title></head>
+<body>
+<div id="docContent">
+<div class="chapter" id="SEARCH">
+<div class="titlepage"><div><div><h2 class="title">Chapter 3. Search Indexes</h2></div></div></div>
+<div class="toc"><dl><dt>3.1. Tree Indexes</dt><dt>3.2. Inverted Indexes</dt><dt>3.3. Partial Indexes</dt></dl></div>
+<div class="sect1" id="SEARCH-TREE">
+<div class="titlepage"><div><div><h2 class="title">3.1. Tree Indexes</h2></div></div></div>
+<p>The default index type is a balanced tree. It supports equality and range comparisons such as less than, greater than and between, and it can return rows already sorted, which avoids a separate sort step.</p>
+</div>
+<div class="sect1" id="SEARCH-INVERTED">
+<div class="titlepage"><div><div><h2 class="title">3.2. Inverted Indexes</h2></div></div></div>
+<p>An inverted index stores, for each word, the list of rows that contain it. It is the index type to use for full-text search and for columns that hold arrays.</p>
+<p>Inverted indexes are slower to update than tree indexes, because one new row can add entries to many word lists.</p>
+</div>
+<div class="sect1" id="SEARCH-PARTIAL">
+<div class="titlepage"><div><div><h2 class="title">3.3. Partial Indexes</h2></div></div></div>
+<p>A partial index covers only the rows that satisfy a WHERE clause given when the index is created. It is smaller than a full index and is useful when queries only ever touch a known subset of rows, for example unpaid orders.</p>
+<pre class="programlisting">CREATE INDEX orders_unpaid ON orders (customer_id) WHERE paid = false;</pre>
+</div>
+</div>
+</div>
+</body>
+</html>

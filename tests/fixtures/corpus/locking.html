@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Chapter 2. Locking</title></head>
+<body>
+<div id="docContent">
+<div class="navheader"><table><tr><th>Chapter 2. Locking</th></tr></table></div>
+<div class="chapter" id="LOCKING">
+<div class="titlepage"><div><div><h2 class="title">Chapter 2. Locking</h2></div></div></div>
+<div class="sect1" id="LOCKING-ROWS">
+<div class="titlepage"><div><div><h2 class="title">2.1. Row Locks</h2></div></div></div>
+<p>A transaction can lock individual rows with SELECT ... FOR UPDATE, which blocks other writers of the same rows until the transaction ends. FOR SHARE takes a weaker lock that still allows other readers to share it.</p>
+<p>Row locks are recorded in the row itself rather than in shared memory, so locking many rows does not exhaust the lock table.</p>
+</div>
+<div class="sect1" id="LOCKING-DEADLOCKS">
+<div class="titlepage"><div><div><h2 class="title">2.2. Deadlocks</h2></div></div></div>
+<p>A deadlock happens when two transactions each wait for a lock the other one holds. The server checks for deadlocks after a transaction has waited for deadlock_timeout, which is 1 second by default.</p>
+<p>When a cycle is found, one of the transactions is aborted with an error and the other continues. Applications should retry the aborted transaction and take locks in a consistent order.</p>
+</div>
+<div class="sect1" id="LOCKING-ADVISORY">
+<div class="titlepage"><div><div><h2 class="title">2.3. Advisory Locks</h2></div></div></div>
+<p>Advisory locks have a meaning defined by the application. The server only guarantees that two sessions cannot hold the same advisory lock at once.</p>
+<table class="table"><thead><tr><th>Function</th><th>Scope</th></tr></thead>
+<tbody><tr><td>ledger_advisory_lock</td><td>session</td></tr>
+<tr><td>ledger_advisory_xact_lock</td><td>transaction</td></tr></tbody></table>
+<pre class="programlisting">SELECT ledger_advisory_xact_lock(42);</pre>
+</div>
+</div>
+<div class="navfooter"><table><tr><td>Prev</td><td>Next</td></tr></table></div>
+</div>
+</body>
+</html>

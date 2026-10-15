@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Chapter 1. Storage Engine</title><style>body { color: black; }</style></head>
+<body>
+<div id="docContent">
+<div class="navheader"><table><tr><th>Chapter 1. Storage Engine</th></tr><tr><td>Prev</td><td>Next</td></tr></table></div>
+<div class="chapter" id="STORAGE">
+<div class="titlepage"><div><div><h2 class="title">Chapter 1. Storage Engine</h2></div></div></div>
+<div class="toc"><dl><dt>1.1. Pages</dt><dt>1.2. Write-Ahead Log</dt></dl></div>
+<p>Ledgerline keeps every table in a set of files made of fixed-size pages. This chapter explains how pages are laid out and how changes are made durable.</p>
+<div class="sect1" id="STORAGE-PAGES">
+<div class="titlepage"><div><div><h2 class="title">1.1. Pages</h2></div></div></div>
+<p>Every page is 8 kB. A page starts with a 24-byte header that records the page checksum and the position of free space.</p>
+<p>Rows are stored from the end of the page towards the header, while the array of row pointers grows from the header towards the end. When the two meet, the page is full and a new page is allocated.</p>
+<pre class="programlisting">SELECT page_size, header_bytes
+FROM ledger_page_info('orders');</pre>
+</div>
+<div class="sect1" id="STORAGE-WAL">
+<div class="titlepage"><div><div><h2 class="title">1.2. Write-Ahead Log</h2></div></div></div>
+<p>Before a changed page is written to its data file, a record describing the change is appended to the write-ahead log. After a crash, the server replays the log from the last checkpoint to restore every committed change.</p>
+<div class="sect2" id="STORAGE-WAL-CHECKPOINTS">
+<div class="titlepage"><div><div><h3 class="title">1.2.1. Checkpoints</h3></div></div></div>
+<p>A checkpoint flushes all dirty pages to disk so that older log segments can be recycled. By default a checkpoint runs every 5 minutes or when 1 GB of log has been written, whichever comes first.</p>
+</div>
+<div class="sect2" id="STORAGE-WAL-ARCHIVING">
+<div class="titlepage"><div><div><h3 class="title">1.2.2. Archiving</h3></div></div></div>
+<p>When archive_mode is on, each completed log segment is handed to archive_command. A segment is only recycled after the command reports success, so a failing archive command makes the log directory grow.</p>
+</div>
+</div>
+</div>
+<div class="navfooter"><table><tr><td>Prev</td><td>Up</td><td>Next</td></tr></table></div>
+</div>
+</body>
+</html>

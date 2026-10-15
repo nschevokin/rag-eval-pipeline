@@ -1,0 +1,12 @@
+{"id": "fx-001", "question": "How big is a page and how large is the page header?", "gold_sections": ["storage#storage-pages"], "key_facts": ["8 kB", "24-byte header"], "type": "factual"}
+{"id": "fx-002", "question": "How often does a checkpoint run by default?", "gold_sections": ["storage#storage-wal-checkpoints"], "key_facts": ["every 5 minutes", "1 GB"], "type": "factual"}
+{"id": "fx-003", "question": "What happens to log segments when archive_command keeps failing?", "gold_sections": ["storage#storage-wal-archiving"], "key_facts": ["log directory grow"], "type": "factual"}
+{"id": "fx-004", "question": "How long does a transaction wait before the deadlock check, by default?", "gold_sections": ["locking#locking-deadlocks"], "key_facts": ["1 second"], "type": "factual"}
+{"id": "fx-005", "question": "Which index type should I use for full-text search?", "gold_sections": ["search#search-inverted"], "key_facts": ["inverted index"], "type": "factual"}
+{"id": "fx-006", "question": "Which lock clause stops other writers from changing the rows I selected?", "gold_sections": ["locking#locking-rows"], "key_facts": ["FOR UPDATE"], "type": "factual"}
+{"id": "fx-007", "question": "After a crash, how are committed changes recovered and what lets old segments be recycled?", "gold_sections": ["storage#storage-wal", "storage#storage-wal-checkpoints"], "key_facts": ["replays the log", "checkpoint"], "type": "multi_section"}
+{"id": "fx-008", "question": "Which index can cover only unpaid orders, and which index returns rows already sorted?", "gold_sections": ["search#search-partial", "search#search-tree"], "key_facts": ["partial index", "balanced tree"], "type": "multi_section"}
+{"id": "fx-009", "question": "Two sessions are stuck waiting on each other; what does the server do?", "gold_sections": ["locking#locking-deadlocks"], "key_facts": ["aborted"], "type": "paraphrase"}
+{"id": "fx-010", "question": "Is there a way to make an index smaller by leaving out rows I never query?", "gold_sections": ["search#search-partial"], "key_facts": ["WHERE clause"], "type": "paraphrase"}
+{"id": "fx-011", "question": "How do I configure logical replication slots?", "gold_sections": [], "key_facts": [], "type": "unanswerable"}
+{"id": "fx-012", "question": "What is the maximum number of columns in a table?", "gold_sections": [], "key_facts": [], "type": "unanswerable"}
