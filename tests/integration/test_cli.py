@@ -42,7 +42,7 @@ def cli_root(tmp_path, db_url, monkeypatch):
     (root / "eval").mkdir()
     (root / "docs").mkdir()
     shutil.copytree(ROOT / "migrations", root / "migrations")
-    shutil.copy(ROOT / "eval" / "gate.toml", root / "eval" / "gate.toml")
+    (root / "eval" / "gate.toml").write_text("regression_tolerance = 0.02\n\n[floors]\n")
     shutil.copy(FIXTURE_QUESTIONS, root / "eval" / "questions.jsonl")
     (root / "experiments.toml").write_text(EXPERIMENTS)
     make_fixture_manifest(tmp_path / "build")
