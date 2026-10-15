@@ -1,0 +1,705 @@
+{
+  "index_id": "57235aed6e4d42dd",
+  "labels": {
+    "index": "heading-800",
+    "retriever": "hybrid-rerank"
+  },
+  "metrics": {
+    "by_type": {
+      "factual": {
+        "mrr": 0.690741,
+        "n": 15,
+        "ndcg_at_10": 0.748026,
+        "recall_at_10": 0.933333,
+        "recall_at_5": 0.8
+      },
+      "multi_section": {
+        "mrr": 1.0,
+        "n": 6,
+        "ndcg_at_10": 0.941214,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "paraphrase": {
+        "mrr": 0.680556,
+        "n": 6,
+        "ndcg_at_10": 0.72803,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      }
+    },
+    "mrr": 0.757202,
+    "n_answerable": 27,
+    "ndcg_at_10": 0.786513,
+    "recall_at_10": 0.962963,
+    "recall_at_5": 0.888889
+  },
+  "n_chunks": 638,
+  "n_questions": 30,
+  "per_question": [
+    {
+      "id": "pg-f-001",
+      "retrieved_sections": [
+        "runtime-config-resource#runtime-config-resource-memory",
+        "runtime-config-wal#runtime-config-wal-settings",
+        "runtime-config-resource#runtime-config-resource-memory",
+        "runtime-config-resource#runtime-config-resource-memory",
+        "runtime-config-resource#runtime-config-resource-background-writer",
+        "runtime-config-preset#runtime-config-preset",
+        "runtime-config-resource#runtime-config-resource-memory",
+        "runtime-config-resource#runtime-config-resource-vacuum-cost",
+        "monitoring-stats#monitoring-pg-stat-io-view",
+        "runtime-config-client#runtime-config-client-preload"
+      ],
+      "scores": {
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "id": "pg-f-003",
+      "retrieved_sections": [
+        "runtime-config-resource#runtime-config-resource-memory",
+        "runtime-config-resource#runtime-config-resource-async-behavior",
+        "populate#populate-work-mem",
+        "runtime-config-resource#runtime-config-resource-memory",
+        "runtime-config-client#runtime-config-client-statement",
+        "runtime-config-resource#runtime-config-resource-vacuum-cost",
+        "ddl-default#ddl-default",
+        "runtime-config-connection#runtime-config-tcp-settings",
+        "runtime-config-client#runtime-config-client-statement",
+        "runtime-config-client#runtime-config-client-format"
+      ],
+      "scores": {
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "id": "pg-f-004",
+      "retrieved_sections": [
+        "runtime-config-locks#runtime-config-locks",
+        "runtime-config-client#runtime-config-client-statement",
+        "explicit-locking#locking-deadlocks",
+        "hot-standby#hot-standby-admin",
+        "explicit-locking#advisory-locks",
+        "runtime-config-developer#runtime-config-developer",
+        "runtime-config-wal#runtime-config-wal-checkpoints",
+        "applevel-consistency#non-serializable-consistency",
+        "monitoring-stats#monitoring-pg-stat-activity-view",
+        "explicit-locking#locking-rows"
+      ],
+      "scores": {
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "id": "pg-f-005",
+      "retrieved_sections": [
+        "runtime-config-wal#runtime-config-wal-checkpoints",
+        "runtime-config-replication#runtime-config-replication-sender",
+        "wal-configuration#wal-configuration",
+        "runtime-config-replication#runtime-config-replication-standby",
+        "wal-configuration#wal-configuration",
+        "continuous-archiving#backup-lowlevel-base-backup",
+        "runtime-config-wal#runtime-config-wal-settings",
+        "wal-configuration#wal-configuration",
+        "runtime-config-wal#runtime-config-wal-settings",
+        "wal-internals#wal-internals"
+      ],
+      "scores": {
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "id": "pg-f-006",
+      "retrieved_sections": [
+        "runtime-config-preset#runtime-config-preset",
+        "runtime-config-replication#runtime-config-replication-sender",
+        "runtime-config-wal#runtime-config-wal-settings",
+        "runtime-config-replication#runtime-config-replication-sender",
+        "runtime-config-preset#runtime-config-preset",
+        "wal-configuration#wal-configuration",
+        "populate#populate-max-wal-size",
+        "runtime-config-replication#runtime-config-replication-standby",
+        "runtime-config-wal#runtime-config-wal-checkpoints",
+        "wal-configuration#wal-configuration"
+      ],
+      "scores": {
+        "mrr": 0.1111111111111111,
+        "ndcg_at_10": 0.3010299956639812,
+        "recall_at_10": 1.0,
+        "recall_at_5": 0.0
+      },
+      "type": "factual"
+    },
+    {
+      "id": "pg-f-007",
+      "retrieved_sections": [
+        "transaction-iso#xact-read-committed",
+        "applevel-consistency#serializable-consistency",
+        "transaction-iso#transaction-iso",
+        "runtime-config-client#runtime-config-client-statement",
+        "transaction-iso#xact-serializable",
+        "mvcc-intro#mvcc-intro",
+        "transaction-iso#xact-serializable",
+        "explicit-locking#advisory-locks",
+        "transaction-iso#xact-repeatable-read",
+        "explicit-locking#locking-deadlocks"
+      ],
+      "scores": {
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "id": "pg-f-016",
+      "retrieved_sections": [
+        "storage-page-layout#storage-tuple-layout",
+        "storage-page-layout#storage-page-layout",
+        "storage-toast#storage-toast",
+        "ddl-basics#ddl-basics",
+        "storage-file-layout#storage-file-layout",
+        "routine-vacuuming#vacuum-for-space-recovery",
+        "using-explain#using-explain-basics",
+        "ddl-rowsecurity#ddl-rowsecurity",
+        "monitoring-stats#monitoring-pg-stat-all-tables-view",
+        "queries-table-expressions#queries-join"
+      ],
+      "scores": {
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "id": "pg-f-018",
+      "retrieved_sections": [
+        "routine-vacuuming#autovacuum",
+        "runtime-config-autovacuum#runtime-config-autovacuum",
+        "routine-vacuuming#autovacuum",
+        "runtime-config-autovacuum#runtime-config-autovacuum",
+        "routine-vacuuming#vacuum-for-statistics",
+        "runtime-config-client#runtime-config-client-statement",
+        "routine-vacuuming#vacuum-for-wraparound",
+        "routine-vacuuming#vacuum-for-wraparound",
+        "routine-vacuuming#vacuum-for-space-recovery",
+        "populate#populate-analyze"
+      ],
+      "scores": {
+        "mrr": 0.5,
+        "ndcg_at_10": 0.6309297535714575,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "id": "pg-f-025",
+      "retrieved_sections": [
+        "parallel-plans#parallel-aggregation",
+        "how-parallel-query-works#how-parallel-query-works",
+        "parallel-plans#parallel-plans",
+        "when-can-parallel-query-be-used#when-can-parallel-query-be-used",
+        "parallel-safety#parallel-safety",
+        "parallel-plans#parallel-append",
+        "parallel-plans#parallel-plan-tips",
+        "runtime-config-developer#runtime-config-developer",
+        "parallel-plans#parallel-scans",
+        "parallel-plans#parallel-joins"
+      ],
+      "scores": {
+        "mrr": 0.5,
+        "ndcg_at_10": 0.6309297535714575,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "id": "pg-f-026",
+      "retrieved_sections": [
+        "ddl-partitioning#ddl-partitioning-using-inheritance",
+        "ddl-partitioning#ddl-partitioning-declarative",
+        "ddl-partitioning#ddl-partitioning-constraint-exclusion",
+        "ddl-partitioning#ddl-partitioning-declarative-maintenance",
+        "ddl-partitioning#ddl-partition-pruning",
+        "ddl-partitioning#ddl-partitioning-declarative-best-practices",
+        "ddl-partitioning#ddl-partitioning-declarative-example",
+        "ddl-partitioning#ddl-partitioning-declarative-maintenance",
+        "ddl-partitioning#ddl-partitioning-declarative-example",
+        "ddl-partitioning#ddl-partitioning-declarative-limitations"
+      ],
+      "scores": {
+        "mrr": 0.08333333333333333,
+        "ndcg_at_10": 0.0,
+        "recall_at_10": 0.0,
+        "recall_at_5": 0.0
+      },
+      "type": "factual"
+    },
+    {
+      "id": "pg-f-032",
+      "retrieved_sections": [
+        "continuous-archiving#backup-lowlevel-base-backup-data",
+        "continuous-archiving#backup-base-backup",
+        "continuous-archiving#backup-lowlevel-base-backup",
+        "continuous-archiving#backup-lowlevel-base-backup-data",
+        "continuous-archiving#backup-standalone",
+        "continuous-archiving#continuous-archiving",
+        "warm-standby#standby-server-setup",
+        "continuous-archiving#backup-lowlevel-base-backup",
+        "runtime-config-wal#runtime-config-wal-settings",
+        "backup-file#backup-file"
+      ],
+      "scores": {
+        "mrr": 0.5,
+        "ndcg_at_10": 0.6309297535714575,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "id": "pg-f-036",
+      "retrieved_sections": [
+        "role-attributes#role-attributes",
+        "database-roles#database-roles",
+        "logical-replication-security#logical-replication-security",
+        "role-membership#role-membership",
+        "role-attributes#role-attributes",
+        "ddl-priv#ddl-priv",
+        "role-membership#role-membership",
+        "predefined-roles#predefined-roles",
+        "runtime-config-connection#runtime-config-connection-settings",
+        "runtime-config-client#runtime-config-client-statement"
+      ],
+      "scores": {
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "id": "pg-f-043",
+      "retrieved_sections": [
+        "planner-stats#planner-stats-extended",
+        "planner-stats#planner-stats-extended-n-distinct-counts",
+        "planner-stats#planner-stats-extended-mcv-lists",
+        "planner-stats#planner-stats-single-column",
+        "planner-stats#planner-stats-extended-functional-deps",
+        "routine-vacuuming#vacuum-for-statistics",
+        "planner-stats#planner-stats-single-column",
+        "logical-replication-col-lists#logical-replication-col-lists",
+        "planner-stats#planner-stats-extended-functional-deps-limits",
+        "indexes-multicolumn#indexes-multicolumn"
+      ],
+      "scores": {
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "id": "pg-f-048",
+      "retrieved_sections": [
+        "runtime-config-preset#runtime-config-preset",
+        "runtime-config-wal#runtime-config-wal-settings",
+        "runtime-config-wal#runtime-config-wal-settings",
+        "runtime-config-replication#runtime-config-replication-sender",
+        "runtime-config-replication#runtime-config-replication-sender",
+        "runtime-config-wal#runtime-config-wal-settings",
+        "runtime-config-wal#runtime-config-wal-checkpoints",
+        "hot-standby#hot-standby-parameters",
+        "logical-replication-config#logical-replication-config-publisher",
+        "runtime-config-replication#runtime-config-replication-standby"
+      ],
+      "scores": {
+        "mrr": 0.5,
+        "ndcg_at_10": 0.6309297535714575,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "id": "pg-f-050",
+      "retrieved_sections": [
+        "monitoring-stats#monitoring-pg-stat-gssapi-view",
+        "monitoring-stats#monitoring-pg-stat-ssl-view",
+        "monitoring-stats#monitoring-pg-statio-all-indexes-view",
+        "monitoring-stats#monitoring-pg-stat-user-functions-view",
+        "monitoring-stats#monitoring-pg-stat-io-view",
+        "monitoring-stats#monitoring-pg-stat-activity-view",
+        "monitoring-stats#monitoring-pg-stat-database-view",
+        "monitoring-stats#monitoring-pg-stat-all-tables-view",
+        "monitoring-stats#monitoring-pg-statio-all-tables-view",
+        "monitoring-stats#monitoring-stats-views"
+      ],
+      "scores": {
+        "mrr": 0.16666666666666666,
+        "ndcg_at_10": 0.39564672360221187,
+        "recall_at_10": 1.0,
+        "recall_at_5": 0.0
+      },
+      "type": "factual"
+    },
+    {
+      "id": "pg-m-002",
+      "retrieved_sections": [
+        "routine-vacuuming#vacuum-for-wraparound",
+        "runtime-config-autovacuum#runtime-config-autovacuum",
+        "runtime-config-autovacuum#runtime-config-autovacuum",
+        "routine-vacuuming#vacuum-for-wraparound",
+        "routine-vacuuming#autovacuum",
+        "routine-vacuuming#vacuum-for-wraparound",
+        "routine-vacuuming#vacuum-basics",
+        "runtime-config-client#runtime-config-client-statement",
+        "routine-vacuuming#vacuum-for-wraparound",
+        "routine-vacuuming#autovacuum"
+      ],
+      "scores": {
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8503449055347546,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "multi_section"
+    },
+    {
+      "id": "pg-m-008",
+      "retrieved_sections": [
+        "textsearch-indexes#textsearch-indexes",
+        "textsearch-tables#textsearch-tables-index",
+        "gin-extensibility#gin-extensibility",
+        "gin-intro#gin-intro",
+        "indexes-types#indexes-types-gin",
+        "gist-examples#gist-examples",
+        "indexes-multicolumn#indexes-multicolumn",
+        "textsearch-configuration#textsearch-configuration",
+        "textsearch-controls#textsearch-parsing-documents",
+        "gist-extensibility#gist-extensibility"
+      ],
+      "scores": {
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "multi_section"
+    },
+    {
+      "id": "pg-m-009",
+      "retrieved_sections": [
+        "storage-toast#storage-toast-inmemory",
+        "storage-toast#storage-toast",
+        "storage-toast#storage-toast",
+        "storage-toast#storage-toast-ondisk",
+        "storage-toast#storage-toast-ondisk",
+        "disk-usage#disk-usage",
+        "monitoring-stats#monitoring-pg-statio-all-tables-view",
+        "gist-extensibility#gist-extensibility",
+        "runtime-config-resource#runtime-config-resource-memory",
+        "runtime-config-resource#runtime-config-resource-memory"
+      ],
+      "scores": {
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8772153153380493,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "multi_section"
+    },
+    {
+      "id": "pg-m-011",
+      "retrieved_sections": [
+        "planner-stats#planner-stats-extended-n-distinct-counts",
+        "planner-stats#planner-stats-extended",
+        "planner-stats#planner-stats-single-column",
+        "planner-stats#planner-stats-single-column",
+        "runtime-config-query#runtime-config-query-other",
+        "planner-stats#planner-stats-extended-mcv-lists",
+        "routine-vacuuming#vacuum-for-statistics",
+        "planner-stats#planner-stats-extended-functional-deps",
+        "indexes-multicolumn#indexes-multicolumn",
+        "planner-stats#planner-stats-extended-functional-deps-limits"
+      ],
+      "scores": {
+        "mrr": 1.0,
+        "ndcg_at_10": 0.9197207891481876,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "multi_section"
+    },
+    {
+      "id": "pg-m-019",
+      "retrieved_sections": [
+        "ddl-schemas#ddl-schemas-create",
+        "manage-ag-tablespaces#manage-ag-tablespaces",
+        "ddl-schemas#ddl-schemas-public",
+        "ddl-schemas#ddl-schemas-path",
+        "manage-ag-tablespaces#manage-ag-tablespaces",
+        "runtime-config-client#runtime-config-client-statement",
+        "ddl-schemas#ddl-schemas-patterns",
+        "storage-file-layout#storage-file-layout",
+        "ddl#ddl",
+        "runtime-config-developer#runtime-config-developer"
+      ],
+      "scores": {
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "multi_section"
+    },
+    {
+      "id": "pg-m-020",
+      "retrieved_sections": [
+        "runtime-config-wal#runtime-config-wal-archiving",
+        "continuous-archiving#backup-archiving-wal",
+        "continuous-archiving#backup-archiving-wal",
+        "warm-standby#continuous-archiving-in-standby",
+        "populate#populate-pitr",
+        "continuous-archiving#backup-archiving-wal",
+        "runtime-config-wal#runtime-config-wal-settings",
+        "continuous-archiving#backup-pitr-recovery",
+        "continuous-archiving#backup-pitr-recovery",
+        "runtime-config-wal#runtime-config-wal-archive-recovery"
+      ],
+      "scores": {
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "multi_section"
+    },
+    {
+      "id": "pg-p-003",
+      "retrieved_sections": [
+        "indexes-index-only-scans#indexes-index-only-scans",
+        "indexes-index-only-scans#indexes-index-only-scans",
+        "indexes-index-only-scans#indexes-index-only-scans",
+        "indexes-partial#indexes-partial",
+        "textsearch-tables#textsearch-tables-search",
+        "indexes-partial#indexes-partial",
+        "indexes-expressional#indexes-expressional",
+        "btree-implementation#btree-deletion",
+        "indexes-bitmap-scans#indexes-bitmap-scans",
+        "indexes-intro#indexes-intro"
+      ],
+      "scores": {
+        "mrr": 0.25,
+        "ndcg_at_10": 0.43067655807339306,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "paraphrase"
+    },
+    {
+      "id": "pg-p-004",
+      "retrieved_sections": [
+        "non-durability#non-durability",
+        "wal-async-commit#wal-async-commit",
+        "wal-reliability#wal-reliability",
+        "runtime-config-wal#runtime-config-wal-settings",
+        "warm-standby#synchronous-replication",
+        "high-availability#high-availability",
+        "wal-reliability#wal-reliability",
+        "warm-standby-failover#warm-standby-failover",
+        "warm-standby#synchronous-replication-config",
+        "warm-standby#synchronous-replication-ha"
+      ],
+      "scores": {
+        "mrr": 0.3333333333333333,
+        "ndcg_at_10": 0.3065735963827292,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "paraphrase"
+    },
+    {
+      "id": "pg-p-007",
+      "retrieved_sections": [
+        "logical-replication-col-lists#logical-replication-col-lists",
+        "logical-replication-restrictions#logical-replication-restrictions",
+        "logical-replication-row-filter#logical-replication-row-filter",
+        "runtime-config-replication#runtime-config-replication-sender",
+        "different-replication-solutions#different-replication-solutions",
+        "runtime-config-replication#runtime-config-replication-subscriber",
+        "high-availability#high-availability",
+        "different-replication-solutions#different-replication-solutions",
+        "ddl-constraints#ddl-constraints-fk",
+        "logical-replication-subscription#logical-replication-subscription-examples"
+      ],
+      "scores": {
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "paraphrase"
+    },
+    {
+      "id": "pg-p-011",
+      "retrieved_sections": [
+        "populate#populate-pg-dump",
+        "backup-dump#backup-dump-large",
+        "backup-dump#backup-dump-restore",
+        "continuous-archiving#continuous-archiving",
+        "continuous-archiving#backup-base-backup",
+        "backup-file#backup-file",
+        "backup-dump#backup-dump",
+        "continuous-archiving#backup-archiving-wal",
+        "continuous-archiving#backup-lowlevel-base-backup-data",
+        "continuous-archiving#backup-pitr-recovery"
+      ],
+      "scores": {
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "paraphrase"
+    },
+    {
+      "id": "pg-p-015",
+      "retrieved_sections": [
+        "runtime-config-resource#runtime-config-resource-disk",
+        "runtime-config-resource#runtime-config-resource-memory",
+        "runtime-config-resource#runtime-config-resource-async-behavior",
+        "queries-limit#queries-limit",
+        "when-can-parallel-query-be-used#when-can-parallel-query-be-used",
+        "queries-with#queries-with-recursive",
+        "routine-vacuuming#autovacuum",
+        "runtime-config-query#runtime-config-query-enable",
+        "queries-with#queries-with-cte-materialization",
+        "populate#populate-max-wal-size"
+      ],
+      "scores": {
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "paraphrase"
+    },
+    {
+      "id": "pg-p-020",
+      "retrieved_sections": [
+        "textsearch-intro#textsearch-intro",
+        "textsearch-dictionaries#textsearch-stopwords",
+        "textsearch-intro#textsearch-document",
+        "textsearch-dictionaries#textsearch-ispell-dictionary",
+        "textsearch-dictionaries#textsearch-simple-dictionary",
+        "textsearch-dictionaries#textsearch-dictionaries",
+        "textsearch-dictionaries#textsearch-thesaurus",
+        "textsearch-controls#textsearch-headline",
+        "textsearch-controls#textsearch-ranking",
+        "textsearch-controls#textsearch-parsing-documents"
+      ],
+      "scores": {
+        "mrr": 0.5,
+        "ndcg_at_10": 0.6309297535714575,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "paraphrase"
+    },
+    {
+      "id": "pg-u-003",
+      "retrieved_sections": [
+        "monitoring-stats#monitoring-pg-stat-gssapi-view",
+        "gssapi-auth#gssapi-auth",
+        "auth-pg-hba-conf#auth-pg-hba-conf",
+        "auth-pg-hba-conf#auth-pg-hba-conf",
+        "logical-replication-col-lists#logical-replication-col-lists",
+        "backup-dump#backup-dump",
+        "populate#populate-pg-dump",
+        "backup-dump#backup-dump-restore",
+        "ddl-constraints#ddl-constraints-fk",
+        "backup-dump#backup-dump-large"
+      ],
+      "scores": {},
+      "type": "unanswerable"
+    },
+    {
+      "id": "pg-u-008",
+      "retrieved_sections": [
+        "populate#populate-pg-dump",
+        "continuous-archiving#backup-pitr-recovery",
+        "backup-dump#backup-dump-large",
+        "backup-dump#backup-dump-all",
+        "backup-file#backup-file",
+        "backup-dump#backup-dump-restore",
+        "backup-dump#backup-dump",
+        "routine-vacuuming#vacuum-for-space-recovery",
+        "runtime-config-developer#runtime-config-developer",
+        "continuous-archiving#continuous-archiving"
+      ],
+      "scores": {},
+      "type": "unanswerable"
+    },
+    {
+      "id": "pg-u-009",
+      "retrieved_sections": [
+        "btree-support-funcs#btree-support-funcs",
+        "gist-builtin-opclasses#gist-builtin-opclasses",
+        "spgist-builtin-opclasses#spgist-builtin-opclasses",
+        "brin-builtin-opclasses#brin-builtin-opclasses",
+        "gist-extensibility#gist-extensibility",
+        "spgist-examples#spgist-examples",
+        "gin-builtin-opclasses#gin-builtin-opclasses",
+        "gin-examples#gin-examples",
+        "runtime-config-developer#runtime-config-developer",
+        "indexes-opclass#indexes-opclass"
+      ],
+      "scores": {},
+      "type": "unanswerable"
+    }
+  ],
+  "question_set_sha256": "7c1a1306e45baeb3504d9bb1b29b041b2eedb038e4ded9a337d57d5063599915",
+  "retriever": {
+    "candidates": 20,
+    "ef_search": 40,
+    "mode": "hybrid",
+    "name": "hybrid-rerank",
+    "rerank_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "rerank_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "rerank_top": 20,
+    "rrf_k": 60
+  },
+  "retriever_key": "7d5dcb578998",
+  "run_key": "60140368adbb9266",
+  "split": "dev",
+  "timing": {
+    "build_seconds": 14.221,
+    "p50_ms": 414.9,
+    "p95_ms": 471.77
+  }
+}

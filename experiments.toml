@@ -1,0 +1,95 @@
+[defaults]
+index = "heading-400"
+retriever = "vector"
+
+[embedders.bge-small]
+kind = "sentence-transformers"
+model = "BAAI/bge-small-en-v1.5"
+revision = "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a"
+dim = 384
+batch_size = 32
+query_prefix = "Represent this sentence for searching relevant passages: "
+
+[embedders.hashing]
+kind = "hashing"
+model = "hashing-bow"
+revision = "v1"
+dim = 384
+batch_size = 256
+query_prefix = ""
+
+[chunkers.heading-200]
+kind = "heading"
+version = "chunker-v1"
+target_tokens = 200
+overlap = 50
+prepend_heading = true
+
+[chunkers.heading-400]
+kind = "heading"
+version = "chunker-v1"
+target_tokens = 400
+overlap = 50
+prepend_heading = true
+
+[chunkers.heading-800]
+kind = "heading"
+version = "chunker-v1"
+target_tokens = 800
+overlap = 50
+prepend_heading = true
+
+[chunkers.fixed-400]
+kind = "fixed"
+version = "fixed-v1"
+target_tokens = 400
+overlap = 50
+prepend_heading = false
+
+[indexes.heading-200]
+chunker = "heading-200"
+embedder = "bge-small"
+hnsw_m = 16
+hnsw_ef_construction = 64
+
+[indexes.heading-400]
+chunker = "heading-400"
+embedder = "bge-small"
+hnsw_m = 16
+hnsw_ef_construction = 64
+
+[indexes.heading-800]
+chunker = "heading-800"
+embedder = "bge-small"
+hnsw_m = 16
+hnsw_ef_construction = 64
+
+[indexes.fixed-400]
+chunker = "fixed-400"
+embedder = "bge-small"
+hnsw_m = 16
+hnsw_ef_construction = 64
+
+[retrievers.vector]
+mode = "vector"
+candidates = 20
+ef_search = 40
+
+[retrievers.fulltext]
+mode = "fulltext"
+candidates = 20
+
+[retrievers.hybrid]
+mode = "hybrid"
+candidates = 20
+ef_search = 40
+rrf_k = 60
+
+[retrievers.hybrid-rerank]
+mode = "hybrid"
+candidates = 20
+ef_search = 40
+rrf_k = 60
+rerank_model = "cross-encoder/ms-marco-MiniLM-L-6-v2"
+rerank_revision = "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+rerank_top = 20

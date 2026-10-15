@@ -1,0 +1,992 @@
+{
+  "index_id": "57235aed6e4d42dd",
+  "labels": {
+    "index": "heading-800",
+    "retriever": "vector"
+  },
+  "metrics": {
+    "abstention_accuracy": 0.666667,
+    "by_type": {
+      "factual": {
+        "mrr": 0.797222,
+        "n": 15,
+        "ndcg_at_10": 0.803969,
+        "recall_at_10": 0.933333,
+        "recall_at_5": 0.866667
+      },
+      "multi_section": {
+        "mrr": 1.0,
+        "n": 6,
+        "ndcg_at_10": 0.98662,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "paraphrase": {
+        "mrr": 0.658333,
+        "n": 6,
+        "ndcg_at_10": 0.70073,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      }
+    },
+    "citation_validity": 0.37037,
+    "false_abstention": 0.407407,
+    "generator": "extractive-v1",
+    "key_fact_coverage": 0.222222,
+    "mrr": 0.81142,
+    "n_answerable": 27,
+    "ndcg_at_10": 0.821616,
+    "recall_at_10": 0.962963,
+    "recall_at_5": 0.925926
+  },
+  "n_chunks": 638,
+  "n_questions": 30,
+  "per_question": [
+    {
+      "answer": {
+        "abstained": false,
+        "cited": [
+          "4d1a9431a11f0d2c956f3b6d93235a1c",
+          "6b9fe0d49693b3035b76f6d17a766eac"
+        ],
+        "text": "If you have a dedicated database server with 1GB or more of RAM, a reasonable starting value for shared_buffers is 25% of the memory in your system. (Note that checkpoints, which are managed by a separate, dedicated auxiliary process, are unaffected.) The default value is 100 buffers. shared_buffers (integer)  #"
+      },
+      "id": "pg-f-001",
+      "retrieved_sections": [
+        "runtime-config-resource#runtime-config-resource-memory",
+        "runtime-config-resource#runtime-config-resource-memory",
+        "runtime-config-resource#runtime-config-resource-memory",
+        "runtime-config-resource#runtime-config-resource-background-writer",
+        "runtime-config-client#runtime-config-client-preload",
+        "dynamic-trace#trace-points",
+        "runtime-config-client#runtime-config-client-format",
+        "runtime-config-client#runtime-config-client-preload",
+        "monitoring-stats#monitoring-pg-stat-io-view",
+        "runtime-config-resource#runtime-config-resource-memory"
+      ],
+      "scores": {
+        "citation_validity": 0.5,
+        "false_abstention": 0.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "answer": {
+        "abstained": false,
+        "cited": [
+          "e3c69d6be41c3917eedd78b04dbf7f7f"
+        ],
+        "text": "It defaults to -1, indicating that the value of maintenance_work_mem should be used instead. Since only one of these operations can be executed at a time by a database session, and an installation normally doesn't have many of them running concurrently, it's safe to set this value significantly larger than work_mem. For the collection of dead tuple identifiers, autovacuum is only able to utilize up to a maximum of 1GB of memory, so setting autovacuum_work_mem to a value higher than that has no effect on the number of dead tuples that autovacuum can collect while scanning a table."
+      },
+      "id": "pg-f-003",
+      "retrieved_sections": [
+        "runtime-config-resource#runtime-config-resource-memory",
+        "runtime-config-client#runtime-config-client-format",
+        "runtime-config-resource#runtime-config-resource-async-behavior",
+        "populate#populate-work-mem",
+        "runtime-config-client#runtime-config-client-format",
+        "runtime-config-connection#runtime-config-tcp-settings",
+        "runtime-config-logging#runtime-config-logging-what",
+        "runtime-config-client#runtime-config-client-statement",
+        "runtime-config-client#runtime-config-client-statement",
+        "runtime-config-client#runtime-config-client-statement"
+      ],
+      "scores": {
+        "citation_validity": 1.0,
+        "false_abstention": 0.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "answer": {
+        "abstained": false,
+        "cited": [
+          "5a59fcf092ebd6cb2974ff9a4c706efa",
+          "e4d9ef819e963186f5f2b85a691a92aa"
+        ],
+        "text": "This is the amount of time to wait on a lock before checking to see if there is a deadlock condition. We optimistically assume that deadlocks are not common in production applications and just wait on the lock for a while before checking for a deadlock. So long as no deadlock situation is detected, a transaction seeking either a table-level or row-level lock will wait indefinitely for conflicting locks to be released."
+      },
+      "id": "pg-f-004",
+      "retrieved_sections": [
+        "runtime-config-locks#runtime-config-locks",
+        "runtime-config-client#runtime-config-client-statement",
+        "explicit-locking#locking-deadlocks",
+        "hot-standby#hot-standby-admin",
+        "monitoring-stats#monitoring-pg-stat-activity-view",
+        "runtime-config-wal#runtime-config-wal-settings",
+        "runtime-config-client#runtime-config-client-statement",
+        "explicit-locking#advisory-locks",
+        "hot-standby#hot-standby-users",
+        "runtime-config-wal#runtime-config-wal-settings"
+      ],
+      "scores": {
+        "citation_validity": 0.5,
+        "false_abstention": 0.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "answer": {
+        "abstained": false,
+        "cited": [
+          "04058362cf2637d3cf0c3d0388c4dac2"
+        ],
+        "text": "Maximum time between automatic WAL checkpoints. Maximum size to let the WAL grow during automatic checkpoints. Specifies the target of checkpoint completion, as a fraction of total time between checkpoints."
+      },
+      "id": "pg-f-005",
+      "retrieved_sections": [
+        "runtime-config-wal#runtime-config-wal-checkpoints",
+        "wal-configuration#wal-configuration",
+        "wal-configuration#wal-configuration",
+        "runtime-config-replication#runtime-config-replication-standby",
+        "runtime-config-replication#runtime-config-replication-sender",
+        "runtime-config-replication#runtime-config-replication-standby",
+        "wal-configuration#wal-configuration",
+        "continuous-archiving#backup-lowlevel-base-backup",
+        "continuous-archiving#backup-lowlevel-base-backup",
+        "continuous-archiving#backup-archiving-wal"
+      ],
+      "scores": {
+        "citation_validity": 1.0,
+        "false_abstention": 0.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "answer": {
+        "abstained": false,
+        "cited": [
+          "ac148bae92bce4cd98ff8a7e9c03a909",
+          "e8952dca32c5382e9d61f6b886b6164e"
+        ],
+        "text": "If max_slot_wal_keep_size is -1 (the default), replication slots may retain an unlimited amount of WAL files. Temporarily increasing the max_wal_size configuration variable can also make large data loads faster. By increasing max_wal_size temporarily during bulk data loads, the number of checkpoints that are required can be reduced."
+      },
+      "id": "pg-f-006",
+      "retrieved_sections": [
+        "runtime-config-preset#runtime-config-preset",
+        "populate#populate-max-wal-size",
+        "runtime-config-wal#runtime-config-wal-settings",
+        "runtime-config-replication#runtime-config-replication-sender",
+        "wal-configuration#wal-configuration",
+        "runtime-config-replication#runtime-config-replication-sender",
+        "runtime-config-replication#runtime-config-replication-standby",
+        "logical-replication-config#logical-replication-config-publisher",
+        "wal-internals#wal-internals",
+        "runtime-config-resource#runtime-config-resource-disk"
+      ],
+      "scores": {
+        "citation_validity": 0.0,
+        "false_abstention": 0.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 0.0,
+        "ndcg_at_10": 0.0,
+        "recall_at_10": 0.0,
+        "recall_at_5": 0.0
+      },
+      "type": "factual"
+    },
+    {
+      "answer": {
+        "abstained": false,
+        "cited": [
+          "70c8ec25a39a9e64a75d3c9c22c44167",
+          "d6c35b5a1fd584be5bfcef73ae8fd342"
+        ],
+        "text": "To set the transaction isolation level of a transaction, use the command SET TRANSACTION. Read Committed is the default isolation level in PostgreSQL. The SQL standard and PostgreSQL-implemented transaction isolation levels are described in Table\u00a013.1."
+      },
+      "id": "pg-f-007",
+      "retrieved_sections": [
+        "transaction-iso#transaction-iso",
+        "transaction-iso#xact-read-committed",
+        "runtime-config-client#runtime-config-client-statement",
+        "applevel-consistency#serializable-consistency",
+        "transaction-iso#xact-serializable",
+        "transaction-iso#xact-serializable",
+        "mvcc-intro#mvcc-intro",
+        "transaction-iso#xact-repeatable-read",
+        "transaction-iso#xact-serializable",
+        "explicit-locking#advisory-locks"
+      ],
+      "scores": {
+        "citation_validity": 0.5,
+        "false_abstention": 0.0,
+        "key_fact_coverage": 1.0,
+        "mrr": 0.5,
+        "ndcg_at_10": 0.6309297535714575,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "answer": {
+        "abstained": true,
+        "cited": [],
+        "text": ""
+      },
+      "id": "pg-f-016",
+      "retrieved_sections": [
+        "storage-page-layout#storage-tuple-layout",
+        "storage-page-layout#storage-page-layout",
+        "storage-toast#storage-toast",
+        "storage-page-layout#storage-page-layout",
+        "storage-file-layout#storage-file-layout",
+        "monitoring-stats#monitoring-pg-stat-subscription-stats",
+        "using-explain#using-explain-basics",
+        "monitoring-stats#monitoring-pg-stat-all-tables-view",
+        "monitoring-stats#monitoring-pg-stat-database-conflicts-view",
+        "logical-replication-row-filter#logical-replication-row-filter"
+      ],
+      "scores": {
+        "citation_validity": 0.0,
+        "false_abstention": 1.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "answer": {
+        "abstained": false,
+        "cited": [
+          "0336aab47590e514deb57db9cee84eb1",
+          "295c5f6ef4071cd44de046c91b1a0c7e"
+        ],
+        "text": "The autovacuum daemon does not issue ANALYZE commands for foreign tables, since it has no means of determining how often that might be useful. When enabled, autovacuum checks for tables that have had a large number of inserted, updated or deleted tuples. If several large tables all become eligible for vacuuming in a short amount of time, all autovacuum workers might become occupied with vacuuming those tables for a long period."
+      },
+      "id": "pg-f-018",
+      "retrieved_sections": [
+        "routine-vacuuming#autovacuum",
+        "routine-vacuuming#autovacuum",
+        "runtime-config-autovacuum#runtime-config-autovacuum",
+        "routine-vacuuming#vacuum-for-statistics",
+        "routine-vacuuming#vacuum-for-wraparound",
+        "runtime-config-autovacuum#runtime-config-autovacuum",
+        "routine-vacuuming#routine-vacuuming",
+        "routine-vacuuming#vacuum-for-wraparound",
+        "populate#populate-analyze",
+        "runtime-config-client#runtime-config-client-statement"
+      ],
+      "scores": {
+        "citation_validity": 0.0,
+        "false_abstention": 0.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 0.3333333333333333,
+        "ndcg_at_10": 0.5,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "answer": {
+        "abstained": false,
+        "cited": [
+          "a6741236026a29ff746c33ca3778451f"
+        ],
+        "text": "Conversely, when the parallel portion of the plan generates a large number of tuples, the leader may be almost entirely occupied with reading the tuples generated by the workers and performing any further processing steps that are required by plan nodes above the level of the Gather node or Gather Merge node. When the optimizer determines that parallel query is the fastest execution strategy for a particular query, it will create a query plan that includes a Gather or Gather Merge node. In all cases, the Gather or Gather Merge node will have exactly one child plan, which is the portion of the plan that will be executed in parallel."
+      },
+      "id": "pg-f-025",
+      "retrieved_sections": [
+        "how-parallel-query-works#how-parallel-query-works",
+        "parallel-plans#parallel-plans",
+        "parallel-plans#parallel-append",
+        "parallel-plans#parallel-plan-tips",
+        "parallel-plans#parallel-scans",
+        "parallel-plans#parallel-aggregation",
+        "parallel-safety#parallel-safety",
+        "parallel-plans#parallel-joins",
+        "using-explain#using-explain-basics",
+        "runtime-config-developer#runtime-config-developer"
+      ],
+      "scores": {
+        "citation_validity": 1.0,
+        "false_abstention": 0.0,
+        "key_fact_coverage": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "answer": {
+        "abstained": false,
+        "cited": [
+          "e37df30c0c1327995b3718476e43a7a5"
+        ],
+        "text": "While the built-in declarative partitioning is suitable for most common use cases, there are some circumstances where a more flexible approach may be useful. Partitioning can be implemented using table inheritance, which allows for several features not supported by declarative partitioning, such as: For declarative partitioning, partitions must have exactly the same set of columns as the partitioned table, whereas with table inheritance, child tables may have extra columns not present in the parent."
+      },
+      "id": "pg-f-026",
+      "retrieved_sections": [
+        "ddl-partitioning#ddl-partitioning-using-inheritance",
+        "ddl-partitioning#ddl-partitioning-declarative-best-practices",
+        "ddl-partitioning#ddl-partitioning-declarative-example",
+        "ddl-partitioning#ddl-partitioning-constraint-exclusion",
+        "ddl-partitioning#ddl-partitioning-declarative",
+        "ddl-partitioning#ddl-partition-pruning",
+        "ddl-partitioning#ddl-partitioning-declarative-limitations",
+        "ddl-partitioning#ddl-partitioning-overview",
+        "ddl-partitioning#ddl-partitioning-declarative-maintenance",
+        "ddl-partitioning#ddl-partitioning"
+      ],
+      "scores": {
+        "citation_validity": 0.0,
+        "false_abstention": 0.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 0.125,
+        "ndcg_at_10": 0.31546487678572877,
+        "recall_at_10": 1.0,
+        "recall_at_5": 0.0
+      },
+      "type": "factual"
+    },
+    {
+      "answer": {
+        "abstained": true,
+        "cited": [],
+        "text": ""
+      },
+      "id": "pg-f-032",
+      "retrieved_sections": [
+        "continuous-archiving#backup-base-backup",
+        "continuous-archiving#backup-lowlevel-base-backup",
+        "continuous-archiving#backup-lowlevel-base-backup-data",
+        "continuous-archiving#backup-lowlevel-base-backup-data",
+        "continuous-archiving#continuous-archiving",
+        "continuous-archiving#continuous-archiving-caveats",
+        "continuous-archiving#backup-pitr-recovery",
+        "continuous-archiving#backup-standalone",
+        "continuous-archiving#backup-lowlevel-base-backup",
+        "runtime-config-wal#runtime-config-wal-archive-recovery"
+      ],
+      "scores": {
+        "citation_validity": 0.0,
+        "false_abstention": 1.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "answer": {
+        "abstained": false,
+        "cited": [
+          "ac82a0c3a7730c602d700110fb975290",
+          "4a66ad56b01b5abe2d89197e2c8f98c8"
+        ],
+        "text": "Only roles that have the LOGIN attribute can be used as the initial role name for a database connection. Every connection to the database server is made using the name of some particular role, and this role determines the initial access privileges for commands issued in that connection. A role with the LOGIN attribute can be considered the same as a \u201cdatabase user\u201d."
+      },
+      "id": "pg-f-036",
+      "retrieved_sections": [
+        "role-attributes#role-attributes",
+        "role-attributes#role-attributes",
+        "role-membership#role-membership",
+        "runtime-config-client#runtime-config-client-statement",
+        "database-roles#database-roles",
+        "predefined-roles#predefined-roles",
+        "role-membership#role-membership",
+        "predefined-roles#predefined-roles",
+        "user-manag#user-manag",
+        "logical-replication-security#logical-replication-security"
+      ],
+      "scores": {
+        "citation_validity": 0.5,
+        "false_abstention": 0.0,
+        "key_fact_coverage": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "answer": {
+        "abstained": false,
+        "cited": [
+          "b65630ed6cd31225d59a548e35c9fbfe"
+        ],
+        "text": "Instead, extended statistics objects, more often called just statistics objects, can be created to instruct the server to obtain statistics across interesting sets of columns. Since the sample size is increased by increasing the statistics target for the table or any of its columns (as described in the previous section), a larger statistics target will normally result in more accurate extended statistics, as well as more time spent calculating them. It is common to see slow queries running bad execution plans because multiple columns used in the query clauses are correlated."
+      },
+      "id": "pg-f-043",
+      "retrieved_sections": [
+        "planner-stats#planner-stats-extended",
+        "planner-stats#planner-stats-extended-functional-deps",
+        "planner-stats#planner-stats-single-column",
+        "planner-stats#planner-stats-extended-n-distinct-counts",
+        "planner-stats#planner-stats-extended-mcv-lists",
+        "planner-stats#planner-stats-extended-functional-deps-limits",
+        "logical-replication-col-lists#logical-replication-col-list-examples",
+        "planner-stats#planner-stats-single-column",
+        "monitoring-stats#monitoring-pg-statio-all-sequences-view",
+        "monitoring-stats#monitoring-stats-views"
+      ],
+      "scores": {
+        "citation_validity": 1.0,
+        "false_abstention": 0.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "answer": {
+        "abstained": false,
+        "cited": [
+          "2aa1d1c0711b989be6dd09778da408e0"
+        ],
+        "text": "The default value is replica, which writes enough data to support WAL archiving and replication, including running read-only queries on a standby server. wal_level (enum)  # wal_level determines how much information is written to the WAL."
+      },
+      "id": "pg-f-048",
+      "retrieved_sections": [
+        "runtime-config-wal#runtime-config-wal-settings",
+        "runtime-config-replication#runtime-config-replication-sender",
+        "runtime-config-preset#runtime-config-preset",
+        "runtime-config-wal#runtime-config-wal-settings",
+        "runtime-config-replication#runtime-config-replication-sender",
+        "logical-replication-config#logical-replication-config-publisher",
+        "runtime-config-wal#runtime-config-wal-settings",
+        "runtime-config-replication#runtime-config-replication-standby",
+        "wal-internals#wal-internals",
+        "continuous-archiving#backup-archiving-wal"
+      ],
+      "scores": {
+        "citation_validity": 1.0,
+        "false_abstention": 0.0,
+        "key_fact_coverage": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "answer": {
+        "abstained": false,
+        "cited": [
+          "65fb5e1b42954a542a965df5d367eb24",
+          "3502fc0c2cf62b62d25bcc6ec263e2bc"
+        ],
+        "text": "The pg_stat_activity view will have one row per server process, showing information related to the current activity of that process. pg_stat_activity View The pg_stat_database view will contain one row for each database in the cluster, plus one for shared objects, showing database-wide statistics."
+      },
+      "id": "pg-f-050",
+      "retrieved_sections": [
+        "monitoring-stats#monitoring-pg-stat-activity-view",
+        "runtime-config-statistics#runtime-config-cumulative-statistics",
+        "monitoring-stats#monitoring-pg-stat-database-view",
+        "monitoring-stats#monitoring-pg-stat-user-functions-view",
+        "monitoring-stats#monitoring-pg-stat-gssapi-view",
+        "monitoring-stats#monitoring-pg-stat-io-view",
+        "monitoring-stats#monitoring-pg-statio-all-tables-view",
+        "monitoring-stats#monitoring-pg-stat-ssl-view",
+        "monitoring-stats#monitoring-pg-statio-all-indexes-view",
+        "monitoring-stats#monitoring-pg-stat-all-tables-view"
+      ],
+      "scores": {
+        "citation_validity": 0.5,
+        "false_abstention": 0.0,
+        "key_fact_coverage": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.6131471927654584,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "factual"
+    },
+    {
+      "answer": {
+        "abstained": true,
+        "cited": [],
+        "text": ""
+      },
+      "id": "pg-m-002",
+      "retrieved_sections": [
+        "routine-vacuuming#vacuum-for-wraparound",
+        "routine-vacuuming#autovacuum",
+        "routine-vacuuming#vacuum-for-wraparound",
+        "routine-vacuuming#autovacuum",
+        "routine-vacuuming#vacuum-for-wraparound",
+        "runtime-config-autovacuum#runtime-config-autovacuum",
+        "runtime-config-autovacuum#runtime-config-autovacuum",
+        "routine-vacuuming#vacuum-for-wraparound",
+        "routine-vacuuming#vacuum-for-multixact-wraparound",
+        "populate#populate-analyze"
+      ],
+      "scores": {
+        "citation_validity": 0.0,
+        "false_abstention": 1.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "multi_section"
+    },
+    {
+      "answer": {
+        "abstained": false,
+        "cited": [
+          "23126e3003ffeaa12aaf888684fb9406",
+          "7317d349e8a4cc133ee7fa4bd662421e"
+        ],
+        "text": "(This is more important when using a GiST index than a GIN index; see Section\u00a012.9.) The expression-index approach is simpler to set up, however, and it requires less disk space since the tsvector representation is not stored explicitly. CREATE INDEX name ON table USING GIST (column [ { DEFAULT | tsvector_ops } (siglen = number) ] ); GIN indexes are the preferred text search index type."
+      },
+      "id": "pg-m-008",
+      "retrieved_sections": [
+        "textsearch-indexes#textsearch-indexes",
+        "textsearch-tables#textsearch-tables-index",
+        "gist-examples#gist-examples",
+        "gist-intro#gist-intro",
+        "indexes-types#indexes-types-gin",
+        "gin-intro#gin-intro",
+        "indexes-types#indexes-type-gist",
+        "gin-extensibility#gin-extensibility",
+        "indexes-types#indexes-type-spgist",
+        "textsearch-intro#textsearch-matching"
+      ],
+      "scores": {
+        "citation_validity": 1.0,
+        "false_abstention": 0.0,
+        "key_fact_coverage": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "multi_section"
+    },
+    {
+      "answer": {
+        "abstained": false,
+        "cited": [
+          "77dc3b1843bda65e35e4ea8a3f8b275b"
+        ],
+        "text": "TOAST pointers can point to data that is not on disk, but is elsewhere in the memory of the current server process. In-memory TOAST pointers are automatically expanded to normal in-line varlena values before storage \u2014 and then possibly converted to on-disk TOAST pointers, if the containing tuple would otherwise be too big. Expanded TOAST pointers are useful for complex data types whose on-disk representation is not especially suited for computational purposes."
+      },
+      "id": "pg-m-009",
+      "retrieved_sections": [
+        "storage-toast#storage-toast-inmemory",
+        "storage-toast#storage-toast",
+        "storage-toast#storage-toast-ondisk",
+        "storage-toast#storage-toast",
+        "storage-toast#storage-toast-ondisk",
+        "disk-usage#disk-usage",
+        "runtime-config-resource#runtime-config-resource-disk",
+        "monitoring-stats#monitoring-pg-statio-all-tables-view",
+        "runtime-config-preset#runtime-config-preset",
+        "runtime-config-resource#runtime-config-resource-async-behavior"
+      ],
+      "scores": {
+        "citation_validity": 1.0,
+        "false_abstention": 0.0,
+        "key_fact_coverage": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.9197207891481876,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "multi_section"
+    },
+    {
+      "answer": {
+        "abstained": true,
+        "cited": [],
+        "text": ""
+      },
+      "id": "pg-m-011",
+      "retrieved_sections": [
+        "planner-stats#planner-stats-single-column",
+        "planner-stats#planner-stats-extended",
+        "planner-stats#planner-stats-single-column",
+        "planner-stats#planner-stats-extended-n-distinct-counts",
+        "planner-stats#planner-stats-extended-functional-deps",
+        "planner-stats#planner-stats-extended-functional-deps-limits",
+        "planner-stats#planner-stats-extended-mcv-lists",
+        "runtime-config-query#runtime-config-query-other",
+        "monitoring-stats#monitoring-pg-stat-bgwriter-view",
+        "routine-vacuuming#vacuum-for-statistics"
+      ],
+      "scores": {
+        "citation_validity": 0.0,
+        "false_abstention": 1.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "multi_section"
+    },
+    {
+      "answer": {
+        "abstained": true,
+        "cited": [],
+        "text": ""
+      },
+      "id": "pg-m-019",
+      "retrieved_sections": [
+        "manage-ag-tablespaces#manage-ag-tablespaces",
+        "ddl-schemas#ddl-schemas-create",
+        "manage-ag-tablespaces#manage-ag-tablespaces",
+        "ddl-schemas#ddl-schemas-path",
+        "storage-file-layout#storage-file-layout",
+        "ddl#ddl",
+        "runtime-config-client#runtime-config-client-statement",
+        "ddl-schemas#ddl-schemas",
+        "runtime-config-developer#runtime-config-developer",
+        "storage-file-layout#storage-file-layout"
+      ],
+      "scores": {
+        "citation_validity": 0.0,
+        "false_abstention": 1.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "multi_section"
+    },
+    {
+      "answer": {
+        "abstained": true,
+        "cited": [],
+        "text": ""
+      },
+      "id": "pg-m-020",
+      "retrieved_sections": [
+        "continuous-archiving#backup-archiving-wal",
+        "runtime-config-wal#runtime-config-wal-archiving",
+        "continuous-archiving#backup-archiving-wal",
+        "populate#populate-pitr",
+        "warm-standby#continuous-archiving-in-standby",
+        "continuous-archiving#continuous-archiving-caveats",
+        "runtime-config-wal#runtime-config-wal-archive-recovery",
+        "warm-standby#standby-server-setup",
+        "continuous-archiving#backup-pitr-recovery",
+        "continuous-archiving#backup-archiving-wal"
+      ],
+      "scores": {
+        "citation_validity": 0.0,
+        "false_abstention": 1.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "multi_section"
+    },
+    {
+      "answer": {
+        "abstained": true,
+        "cited": [],
+        "text": ""
+      },
+      "id": "pg-p-003",
+      "retrieved_sections": [
+        "indexes-partial#indexes-partial",
+        "indexes-index-only-scans#indexes-index-only-scans",
+        "indexes-intro#indexes-intro",
+        "indexes-index-only-scans#indexes-index-only-scans",
+        "indexes-index-only-scans#indexes-index-only-scans",
+        "textsearch-tables#textsearch-tables-search",
+        "indexes-partial#indexes-partial",
+        "indexes-multicolumn#indexes-multicolumn",
+        "indexes-partial#indexes-partial",
+        "indexes-expressional#indexes-expressional"
+      ],
+      "scores": {
+        "citation_validity": 0.0,
+        "false_abstention": 1.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "paraphrase"
+    },
+    {
+      "answer": {
+        "abstained": true,
+        "cited": [],
+        "text": ""
+      },
+      "id": "pg-p-004",
+      "retrieved_sections": [
+        "warm-standby#synchronous-replication",
+        "wal-reliability#wal-reliability",
+        "runtime-config-wal#runtime-config-wal-settings",
+        "hot-standby#hot-standby-admin",
+        "wal-reliability#wal-reliability",
+        "different-replication-solutions#different-replication-solutions",
+        "hot-standby#hot-standby-admin",
+        "wal-async-commit#wal-async-commit",
+        "warm-standby-failover#warm-standby-failover",
+        "warm-standby#synchronous-replication-config"
+      ],
+      "scores": {
+        "citation_validity": 0.0,
+        "false_abstention": 1.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 0.5,
+        "ndcg_at_10": 0.38685280723454163,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "paraphrase"
+    },
+    {
+      "answer": {
+        "abstained": true,
+        "cited": [],
+        "text": ""
+      },
+      "id": "pg-p-007",
+      "retrieved_sections": [
+        "logical-replication-restrictions#logical-replication-restrictions",
+        "logical-replication-subscription#logical-replication-subscription-examples",
+        "logical-replication#logical-replication",
+        "logical-replication-col-lists#logical-replication-col-lists",
+        "logical-replication-subscription#logical-replication-subscription-examples",
+        "logical-replication-row-filter#logical-replication-row-filter-initial-data-sync",
+        "high-availability#high-availability",
+        "runtime-config-replication#runtime-config-replication",
+        "logical-replication-row-filter#logical-replication-row-filter",
+        "runtime-config-replication#runtime-config-replication-sender"
+      ],
+      "scores": {
+        "citation_validity": 0.0,
+        "false_abstention": 1.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 0.25,
+        "ndcg_at_10": 0.43067655807339306,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "paraphrase"
+    },
+    {
+      "answer": {
+        "abstained": true,
+        "cited": [],
+        "text": ""
+      },
+      "id": "pg-p-011",
+      "retrieved_sections": [
+        "populate#populate-pg-dump",
+        "backup-dump#backup-dump-large",
+        "continuous-archiving#backup-pitr-recovery",
+        "continuous-archiving#backup-base-backup",
+        "continuous-archiving#continuous-archiving",
+        "continuous-archiving#compressed-archive-logs",
+        "runtime-config-wal#runtime-config-wal-archive-recovery",
+        "backup-dump#backup-dump-restore",
+        "continuous-archiving#backup-pitr-recovery",
+        "continuous-archiving#backup-archiving-wal"
+      ],
+      "scores": {
+        "citation_validity": 0.0,
+        "false_abstention": 1.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "paraphrase"
+    },
+    {
+      "answer": {
+        "abstained": false,
+        "cited": [
+          "536dda54e6e097724fba7703a23461bc",
+          "1a4280a64d29dfd35d7f08908be53790"
+        ],
+        "text": "It should be noted that disk space used for explicit temporary tables, as opposed to temporary files used behind-the-scenes in query execution, does not count against this limit. Sets the base maximum amount of memory to be used by a query operation (such as a sort or hash table) before writing to temporary disk files. Specifies the maximum amount of disk space that a process can use for temporary files, such as sort and hash temporary files, or the storage file for a held cursor."
+      },
+      "id": "pg-p-015",
+      "retrieved_sections": [
+        "runtime-config-resource#runtime-config-resource-disk",
+        "runtime-config-resource#runtime-config-resource-memory",
+        "routine-vacuuming#autovacuum",
+        "populate#populate-max-wal-size",
+        "routine-vacuuming#vacuum-for-wraparound",
+        "backup-dump#backup-dump-large",
+        "runtime-config-resource#runtime-config-resource-async-behavior",
+        "runtime-config-resource#runtime-config-resource-async-behavior",
+        "hot-standby#hot-standby-conflict",
+        "routine-vacuuming#vacuum-for-wraparound"
+      ],
+      "scores": {
+        "citation_validity": 0.5,
+        "false_abstention": 0.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "paraphrase"
+    },
+    {
+      "answer": {
+        "abstained": true,
+        "cited": [],
+        "text": ""
+      },
+      "id": "pg-p-020",
+      "retrieved_sections": [
+        "textsearch-intro#textsearch-document",
+        "textsearch-intro#textsearch-intro",
+        "textsearch-intro#textsearch-matching",
+        "textsearch-debugging#textsearch-configuration-testing",
+        "textsearch-dictionaries#textsearch-ispell-dictionary",
+        "textsearch-controls#textsearch-parsing-queries",
+        "textsearch-dictionaries#textsearch-thesaurus-examples",
+        "textsearch-controls#textsearch-headline",
+        "textsearch-controls#textsearch-parsing-documents",
+        "textsearch-dictionaries#textsearch-stopwords"
+      ],
+      "scores": {
+        "citation_validity": 0.0,
+        "false_abstention": 1.0,
+        "key_fact_coverage": 0.0,
+        "mrr": 0.2,
+        "ndcg_at_10": 0.38685280723454163,
+        "recall_at_10": 1.0,
+        "recall_at_5": 1.0
+      },
+      "type": "paraphrase"
+    },
+    {
+      "answer": {
+        "abstained": true,
+        "cited": [],
+        "text": ""
+      },
+      "id": "pg-u-003",
+      "retrieved_sections": [
+        "gssapi-auth#gssapi-auth",
+        "backup-dump#backup-dump",
+        "runtime-config-developer#runtime-config-developer",
+        "backup-dump#backup-dump-restore",
+        "populate#populate-pg-dump",
+        "auth-pg-hba-conf#auth-pg-hba-conf",
+        "monitoring-stats#monitoring-pg-stat-gssapi-view",
+        "backup-dump#backup-dump-large",
+        "auth-pg-hba-conf#auth-pg-hba-conf",
+        "auth-methods#auth-methods"
+      ],
+      "scores": {
+        "abstained_correctly": 1.0
+      },
+      "type": "unanswerable"
+    },
+    {
+      "answer": {
+        "abstained": true,
+        "cited": [],
+        "text": ""
+      },
+      "id": "pg-u-008",
+      "retrieved_sections": [
+        "populate#populate-pg-dump",
+        "continuous-archiving#backup-pitr-recovery",
+        "backup-dump#backup-dump-restore",
+        "backup-dump#backup-dump-all",
+        "backup-dump#backup-dump",
+        "backup-dump#backup-dump-large",
+        "runtime-config-developer#runtime-config-developer",
+        "continuous-archiving#continuous-archiving",
+        "backup-file#backup-file",
+        "routine-vacuuming#vacuum-for-space-recovery"
+      ],
+      "scores": {
+        "abstained_correctly": 1.0
+      },
+      "type": "unanswerable"
+    },
+    {
+      "answer": {
+        "abstained": false,
+        "cited": [
+          "14bd93573042f27f65d2d582610dd2cd",
+          "4f7df9942abf1c9ea1cf081a4550d8a7",
+          "1b45036077e977d1074eb72581379703"
+        ],
+        "text": "The core PostgreSQL distribution includes the SP-GiST operator classes shown in Table\u00a069.1. The core PostgreSQL distribution includes the GIN operator classes shown in Table\u00a070.1. The core PostgreSQL distribution includes the GiST operator classes shown in Table\u00a068.1."
+      },
+      "id": "pg-u-009",
+      "retrieved_sections": [
+        "spgist-builtin-opclasses#spgist-builtin-opclasses",
+        "gin-builtin-opclasses#gin-builtin-opclasses",
+        "gist-builtin-opclasses#gist-builtin-opclasses",
+        "btree-support-funcs#btree-support-funcs",
+        "brin-builtin-opclasses#brin-builtin-opclasses",
+        "spgist-examples#spgist-examples",
+        "gin-examples#gin-examples",
+        "brin-builtin-opclasses#brin-builtin-opclasses",
+        "runtime-config-developer#runtime-config-developer",
+        "textsearch-parsers#textsearch-parsers"
+      ],
+      "scores": {
+        "abstained_correctly": 0.0
+      },
+      "type": "unanswerable"
+    }
+  ],
+  "question_set_sha256": "7c1a1306e45baeb3504d9bb1b29b041b2eedb038e4ded9a337d57d5063599915",
+  "retriever": {
+    "candidates": 20,
+    "ef_search": 40,
+    "mode": "vector",
+    "name": "vector",
+    "rerank_model": "",
+    "rerank_revision": "",
+    "rerank_top": 0,
+    "rrf_k": 60
+  },
+  "retriever_key": "c6d2ea78ce50",
+  "run_key": "91432940d1288609",
+  "split": "dev",
+  "timing": {
+    "build_seconds": 14.221,
+    "p50_ms": 16.56,
+    "p95_ms": 22.0
+  }
+}

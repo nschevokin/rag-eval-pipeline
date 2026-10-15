@@ -1,0 +1,35 @@
+# PostgreSQL 16 manual chapters in scope. `rag corpus discover` expands each one into its pages.
+# Add or remove a chapter here, run `make discover`, and the page list follows. A wrong slug is
+# reported by name and nothing is written.
+
+# SQL language
+https://www.postgresql.org/docs/16/ddl.html
+https://www.postgresql.org/docs/16/dml.html
+https://www.postgresql.org/docs/16/queries.html
+https://www.postgresql.org/docs/16/indexes.html
+https://www.postgresql.org/docs/16/textsearch.html
+https://www.postgresql.org/docs/16/mvcc.html
+https://www.postgresql.org/docs/16/performance-tips.html
+https://www.postgresql.org/docs/16/parallel-query.html
+
+# Server administration
+https://www.postgresql.org/docs/16/runtime-config.html
+https://www.postgresql.org/docs/16/client-authentication.html
+https://www.postgresql.org/docs/16/user-manag.html
+https://www.postgresql.org/docs/16/managing-databases.html
+https://www.postgresql.org/docs/16/maintenance.html
+https://www.postgresql.org/docs/16/backup.html
+https://www.postgresql.org/docs/16/high-availability.html
+https://www.postgresql.org/docs/16/monitoring.html
+https://www.postgresql.org/docs/16/diskusage.html
+https://www.postgresql.org/docs/16/wal.html
+https://www.postgresql.org/docs/16/logical-replication.html
+
+# Internals
+https://www.postgresql.org/docs/16/storage.html
+https://www.postgresql.org/docs/16/btree.html
+https://www.postgresql.org/docs/16/gin.html
+https://www.postgresql.org/docs/16/gist.html
+https://www.postgresql.org/docs/16/spgist.html
+https://www.postgresql.org/docs/16/brin.html
+https://www.postgresql.org/docs/16/hash-index.html

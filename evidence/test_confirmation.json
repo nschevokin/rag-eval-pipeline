@@ -1,0 +1,50 @@
+[
+  {
+    "decision": "D-029",
+    "eval_id": 41,
+    "run_key": "d79e54fbb9aab6ef",
+    "index_id": "57235aed6e4d42dd",
+    "retriever": {
+      "name": "vector",
+      "mode": "vector",
+      "candidates": 20,
+      "ef_search": 40,
+      "rrf_k": 60,
+      "rerank_model": "",
+      "rerank_revision": "",
+      "rerank_top": 0
+    },
+    "metrics": {
+      "recall_at_5": 0.952381,
+      "recall_at_10": 0.984127,
+      "mrr": 0.842876,
+      "ndcg_at_10": 0.842169,
+      "by_type": {
+        "factual": {
+          "recall_at_5": 0.971429,
+          "recall_at_10": 0.971429,
+          "mrr": 0.911905,
+          "ndcg_at_10": 0.922,
+          "n": 35
+        },
+        "multi_section": {
+          "recall_at_5": 0.928571,
+          "recall_at_10": 1.0,
+          "mrr": 0.818452,
+          "ndcg_at_10": 0.714208,
+          "n": 14
+        },
+        "paraphrase": {
+          "recall_at_5": 0.928571,
+          "recall_at_10": 1.0,
+          "mrr": 0.694728,
+          "ndcg_at_10": 0.770552,
+          "n": 14
+        }
+      },
+      "n_answerable": 63
+    },
+    "evidence": "test-57235aed6e4d42dd-c6d2ea78ce50.json",
+    "ran_at": "2026-10-15T08:49:12+00:00"
+  }
+]

@@ -1,0 +1,1225 @@
+{
+  "corpus": "postgresql-16-manual-subset",
+  "license": "PostgreSQL License",
+  "source": "https://www.postgresql.org/docs/16/",
+  "files": [
+    {
+      "name": "ddl.html",
+      "url": "https://www.postgresql.org/docs/16/ddl.html",
+      "sha256": "875a98820231d66d847891e35205940d6df1f3f5889142541c14bf4f42debef2",
+      "bytes": 19653
+    },
+    {
+      "name": "ddl-basics.html",
+      "url": "https://www.postgresql.org/docs/16/ddl-basics.html",
+      "sha256": "9c959cb33a512799d8e791791ed655e9e75a22ca77bd90ec2df685dcf2603da9",
+      "bytes": 18885
+    },
+    {
+      "name": "ddl-default.html",
+      "url": "https://www.postgresql.org/docs/16/ddl-default.html",
+      "sha256": "422cf5d82e915b82b9a8e73fa30ad7e41926e97f3a8a6032cfbf72818ed833c8",
+      "bytes": 16013
+    },
+    {
+      "name": "ddl-generated-columns.html",
+      "url": "https://www.postgresql.org/docs/16/ddl-generated-columns.html",
+      "sha256": "980b018d7aebbdf72f127b6447a81908a1c3cdbbbdf48774b32889c765ad0851",
+      "bytes": 17814
+    },
+    {
+      "name": "ddl-constraints.html",
+      "url": "https://www.postgresql.org/docs/16/ddl-constraints.html",
+      "sha256": "28eb13916ccaa9e6b347ee0cdacbd116670f4b5dbb64d6bc8bcc3d850c44572b",
+      "bytes": 44713
+    },
+    {
+      "name": "ddl-system-columns.html",
+      "url": "https://www.postgresql.org/docs/16/ddl-system-columns.html",
+      "sha256": "31934d0018266c315669a25a8ba319b2fec012d2a79ab1a23a0dcbb137002b50",
+      "bytes": 18803
+    },
+    {
+      "name": "ddl-alter.html",
+      "url": "https://www.postgresql.org/docs/16/ddl-alter.html",
+      "sha256": "6032060f361a0149fcac0d3886499f0bcf8752be0043c12fa22fae3c862c188f",
+      "bytes": 25401
+    },
+    {
+      "name": "ddl-priv.html",
+      "url": "https://www.postgresql.org/docs/16/ddl-priv.html",
+      "sha256": "1801fdda61da98f70ab7cb571b733f75638275d99631b6beabe64e0af0c689d1",
+      "bytes": 41761
+    },
+    {
+      "name": "ddl-rowsecurity.html",
+      "url": "https://www.postgresql.org/docs/16/ddl-rowsecurity.html",
+      "sha256": "f207c504ecebd1dd5c872827721263b7e266aa6745a697f7fa7ce3a28fdd7cbe",
+      "bytes": 31184
+    },
+    {
+      "name": "ddl-schemas.html",
+      "url": "https://www.postgresql.org/docs/16/ddl-schemas.html",
+      "sha256": "baf8039d644f0fd7dc02e4fb79f33691edc798a1bc3b0403ff211d26fef28cdd",
+      "bytes": 35170
+    },
+    {
+      "name": "ddl-inherit.html",
+      "url": "https://www.postgresql.org/docs/16/ddl-inherit.html",
+      "sha256": "4196dfe92d342d56d01443ac6ca40748ceb366a144f861d343c637f52a3af522",
+      "bytes": 28714
+    },
+    {
+      "name": "ddl-partitioning.html",
+      "url": "https://www.postgresql.org/docs/16/ddl-partitioning.html",
+      "sha256": "2a85dd26aa26438e0b9aaade1862483b57056fa282478920af3ad13d1a95bfb7",
+      "bytes": 71327
+    },
+    {
+      "name": "ddl-foreign-data.html",
+      "url": "https://www.postgresql.org/docs/16/ddl-foreign-data.html",
+      "sha256": "1d2086c6bc9cfc61f20142e229f0a9e24b6d106c772c2750d8a07a3ec15a2f5b",
+      "bytes": 15512
+    },
+    {
+      "name": "ddl-others.html",
+      "url": "https://www.postgresql.org/docs/16/ddl-others.html",
+      "sha256": "36507ff4622528ad0eebf7738f04a282bda2ab7075f6b83cb0a3ae87ff55635d",
+      "bytes": 14885
+    },
+    {
+      "name": "ddl-depend.html",
+      "url": "https://www.postgresql.org/docs/16/ddl-depend.html",
+      "sha256": "5b53fc9f1bc142c61412e7cc223e80216b271fba4858f9579f50086d48b00e56",
+      "bytes": 19348
+    },
+    {
+      "name": "dml.html",
+      "url": "https://www.postgresql.org/docs/16/dml.html",
+      "sha256": "d761352da88dfc117d45407b6010c8a155aff04cc88bf71c796844a41e85de9e",
+      "bytes": 14485
+    },
+    {
+      "name": "dml-insert.html",
+      "url": "https://www.postgresql.org/docs/16/dml-insert.html",
+      "sha256": "05833defb1072d108592c0713c7ae8c8cdb3b1d282a0e317dd04aaa06cf4fd75",
+      "bytes": 16773
+    },
+    {
+      "name": "dml-update.html",
+      "url": "https://www.postgresql.org/docs/16/dml-update.html",
+      "sha256": "20b7a72b151d9f72e3d2fc632a441f33214e2caa7d0b3728aaf5b12e8452556d",
+      "bytes": 17152
+    },
+    {
+      "name": "dml-delete.html",
+      "url": "https://www.postgresql.org/docs/16/dml-delete.html",
+      "sha256": "e0064722c98d2c0e4ceea03091436c2ff260d6ca8d25c1dd676ce0f1291a6670",
+      "bytes": 15009
+    },
+    {
+      "name": "dml-returning.html",
+      "url": "https://www.postgresql.org/docs/16/dml-returning.html",
+      "sha256": "c9b2215ead13e832f28898e6cc0bebbd9a9c3b5e770f14cb34d55d7f7d600301",
+      "bytes": 15615
+    },
+    {
+      "name": "queries.html",
+      "url": "https://www.postgresql.org/docs/16/queries.html",
+      "sha256": "7abe34d30dfc8bcd2662571744d70dc1274b158efaa4a934114897680203f77b",
+      "bytes": 17458
+    },
+    {
+      "name": "queries-overview.html",
+      "url": "https://www.postgresql.org/docs/16/queries-overview.html",
+      "sha256": "d9a7ac46f944b6ee1300577e5e9ba7f408d00a9ad369dba7c8bd2f2016cd96a8",
+      "bytes": 15736
+    },
+    {
+      "name": "queries-table-expressions.html",
+      "url": "https://www.postgresql.org/docs/16/queries-table-expressions.html",
+      "sha256": "d07aec40612451ed86a6cb9eddcb3a91a36d95b710bd7bd7749ce074bed2cd61",
+      "bytes": 72714
+    },
+    {
+      "name": "queries-select-lists.html",
+      "url": "https://www.postgresql.org/docs/16/queries-select-lists.html",
+      "sha256": "793792a36432dabdd5351bd7074820904d0125d6de98599cdda0f8c8b09fde17",
+      "bytes": 23030
+    },
+    {
+      "name": "queries-union.html",
+      "url": "https://www.postgresql.org/docs/16/queries-union.html",
+      "sha256": "7eba3a157a98595a798493d7a971069525e634eb99864efacf6f663e5d70bf98",
+      "bytes": 20014
+    },
+    {
+      "name": "queries-order.html",
+      "url": "https://www.postgresql.org/docs/16/queries-order.html",
+      "sha256": "92b48b2ce147e84634adde5599fc701d40827b464871d2ccbf1d934008c0dea2",
+      "bytes": 19582
+    },
+    {
+      "name": "queries-limit.html",
+      "url": "https://www.postgresql.org/docs/16/queries-limit.html",
+      "sha256": "f289a670cda222b565a4788597aa9dcc239992cef7b9462f51e2c7f15e2150db",
+      "bytes": 17307
+    },
+    {
+      "name": "queries-values.html",
+      "url": "https://www.postgresql.org/docs/16/queries-values.html",
+      "sha256": "6cc82d7574bdb066b464295930b4139060ae79d0cbe236670477717067dade07",
+      "bytes": 15988
+    },
+    {
+      "name": "queries-with.html",
+      "url": "https://www.postgresql.org/docs/16/queries-with.html",
+      "sha256": "835e930bdf9f9e7c25c6c23d1b5310f09ed6158278da3d47b3a7f5287d757931",
+      "bytes": 43621
+    },
+    {
+      "name": "indexes.html",
+      "url": "https://www.postgresql.org/docs/16/indexes.html",
+      "sha256": "880010dea8fc0edba12dca555dde168c3fe6d97c022431d3a553abc0f2743f59",
+      "bytes": 16249
+    },
+    {
+      "name": "indexes-intro.html",
+      "url": "https://www.postgresql.org/docs/16/indexes-intro.html",
+      "sha256": "7b8b0b44bcb0650cd04ecbff53403358ee6b656640f610596a726e1ff95fad7e",
+      "bytes": 18584
+    },
+    {
+      "name": "indexes-types.html",
+      "url": "https://www.postgresql.org/docs/16/indexes-types.html",
+      "sha256": "04a1773417e64114283d6b1488fbeaaccf48751db4d7169c0e6b4143093f252c",
+      "bytes": 26323
+    },
+    {
+      "name": "indexes-multicolumn.html",
+      "url": "https://www.postgresql.org/docs/16/indexes-multicolumn.html",
+      "sha256": "b18f1d4e559638344e085f0513d3e95fd64335bdf4ad866d853fd1e197b48a41",
+      "bytes": 18983
+    },
+    {
+      "name": "indexes-ordering.html",
+      "url": "https://www.postgresql.org/docs/16/indexes-ordering.html",
+      "sha256": "b9904a03d79f8184d6f157119865e89e081ad5b455b88ece73ebf40892f3ec2d",
+      "bytes": 17234
+    },
+    {
+      "name": "indexes-bitmap-scans.html",
+      "url": "https://www.postgresql.org/docs/16/indexes-bitmap-scans.html",
+      "sha256": "c8f8c3c93b2a804a829a03c4948c25cec759f6e6b15a936216fb8cad2de33b56",
+      "bytes": 17992
+    },
+    {
+      "name": "indexes-unique.html",
+      "url": "https://www.postgresql.org/docs/16/indexes-unique.html",
+      "sha256": "5ae2bb21a569c5981e6f3b4268ec6cf40c73615f13482cd58db3390b039d4b66",
+      "bytes": 15582
+    },
+    {
+      "name": "indexes-expressional.html",
+      "url": "https://www.postgresql.org/docs/16/indexes-expressional.html",
+      "sha256": "0aecdfd2e51930c69cc5d7b51552efee2fc35b98a6b2d76d35f871f85fa1b8b4",
+      "bytes": 16478
+    },
+    {
+      "name": "indexes-partial.html",
+      "url": "https://www.postgresql.org/docs/16/indexes-partial.html",
+      "sha256": "72bd3623b21e2cd4cba389863142b44a46eaba3020001608fd463ef6c2ffcb51",
+      "bytes": 26442
+    },
+    {
+      "name": "indexes-index-only-scans.html",
+      "url": "https://www.postgresql.org/docs/16/indexes-index-only-scans.html",
+      "sha256": "cf50bb6f89e9a1f789aa956b6137546d70fb287aa7d731f6f9ddb5231198bdc6",
+      "bytes": 24565
+    },
+    {
+      "name": "indexes-opclass.html",
+      "url": "https://www.postgresql.org/docs/16/indexes-opclass.html",
+      "sha256": "6347b86cf6997a50e1efb4b5fb826fb2e3ad667c760cc243da4ef3620d71b7aa",
+      "bytes": 20918
+    },
+    {
+      "name": "indexes-collations.html",
+      "url": "https://www.postgresql.org/docs/16/indexes-collations.html",
+      "sha256": "da36228a33cf8030b483a0399972f6117f63b7693fe8132f249fda2530af03d2",
+      "bytes": 13901
+    },
+    {
+      "name": "indexes-examine.html",
+      "url": "https://www.postgresql.org/docs/16/indexes-examine.html",
+      "sha256": "5522028223717788478daa7cb5b6dfc2a1b494f04f5a700d23ee545388b96532",
+      "bytes": 19629
+    },
+    {
+      "name": "textsearch.html",
+      "url": "https://www.postgresql.org/docs/16/textsearch.html",
+      "sha256": "5e29e41fe202569d71d171d25c0fb82af1ec39a6dc47fb0e53fc57c0a5500075",
+      "bytes": 17877
+    },
+    {
+      "name": "textsearch-intro.html",
+      "url": "https://www.postgresql.org/docs/16/textsearch-intro.html",
+      "sha256": "f8966791b18178c447ea40ec2c5bae1d99c395279dbc3d38cd605f145b36b64e",
+      "bytes": 34721
+    },
+    {
+      "name": "textsearch-tables.html",
+      "url": "https://www.postgresql.org/docs/16/textsearch-tables.html",
+      "sha256": "62c3d80589acfb4c3adefc0ee9466d92c7c993d02cf80811cedcdbdb917edb9d",
+      "bytes": 20793
+    },
+    {
+      "name": "textsearch-controls.html",
+      "url": "https://www.postgresql.org/docs/16/textsearch-controls.html",
+      "sha256": "53fc77b089495efcf53e25b9a98d68be56bffbdfdb1458712a22db4f32bad32b",
+      "bytes": 47065
+    },
+    {
+      "name": "textsearch-features.html",
+      "url": "https://www.postgresql.org/docs/16/textsearch-features.html",
+      "sha256": "44f1e189059b6bc993336b95cdb87fca94ec21af967a7fafe60aa91242bf9c61",
+      "bytes": 37100
+    },
+    {
+      "name": "textsearch-parsers.html",
+      "url": "https://www.postgresql.org/docs/16/textsearch-parsers.html",
+      "sha256": "8db2c27fe659918234984f0c6c492cc5b5da9b7de37e324ce1a05ee2dedab474",
+      "bytes": 22062
+    },
+    {
+      "name": "textsearch-dictionaries.html",
+      "url": "https://www.postgresql.org/docs/16/textsearch-dictionaries.html",
+      "sha256": "a9e9b02dbfedf1cd66af9a44afe57bc0e3798801d502e3c6a725090f431bf481",
+      "bytes": 48307
+    },
+    {
+      "name": "textsearch-configuration.html",
+      "url": "https://www.postgresql.org/docs/16/textsearch-configuration.html",
+      "sha256": "5d3b38b8f451ea5ccd8028f5644cc1ada1cb186f970e9bfb68ff05227ecb8bb8",
+      "bytes": 17120
+    },
+    {
+      "name": "textsearch-debugging.html",
+      "url": "https://www.postgresql.org/docs/16/textsearch-debugging.html",
+      "sha256": "874240f7598b1e5ba031fddc7703b85e744158d7f40c45a5bfca2417850f6459",
+      "bytes": 29785
+    },
+    {
+      "name": "textsearch-indexes.html",
+      "url": "https://www.postgresql.org/docs/16/textsearch-indexes.html",
+      "sha256": "f3d98156921b00c13fea512e13c84fa4586e27036c305bebed8efe5188e55d77",
+      "bytes": 18691
+    },
+    {
+      "name": "textsearch-psql.html",
+      "url": "https://www.postgresql.org/docs/16/textsearch-psql.html",
+      "sha256": "79b7e10e626002e6e1bdd68f6d87a1cda2c936110c1c7fc8b39029b12377ff6c",
+      "bytes": 20945
+    },
+    {
+      "name": "textsearch-limitations.html",
+      "url": "https://www.postgresql.org/docs/16/textsearch-limitations.html",
+      "sha256": "f1ba452df22d18085a5b905aced79e86dfe7313aa9fcd9e01b60be561090560d",
+      "bytes": 15061
+    },
+    {
+      "name": "mvcc.html",
+      "url": "https://www.postgresql.org/docs/16/mvcc.html",
+      "sha256": "6c4d19f85e089c3e62ee4f5df9e189bd04458eedb0cf1ffe0527efe05c0427fc",
+      "bytes": 17039
+    },
+    {
+      "name": "mvcc-intro.html",
+      "url": "https://www.postgresql.org/docs/16/mvcc-intro.html",
+      "sha256": "fa59edb60b6b5611f076a29b810cefe56b66264dd020a2a9faba25f7d2723f2c",
+      "bytes": 15265
+    },
+    {
+      "name": "transaction-iso.html",
+      "url": "https://www.postgresql.org/docs/16/transaction-iso.html",
+      "sha256": "e65d2f20ab01d80d202ca76fb568d02bb74a414d712d73dd305405683694cf9e",
+      "bytes": 47350
+    },
+    {
+      "name": "explicit-locking.html",
+      "url": "https://www.postgresql.org/docs/16/explicit-locking.html",
+      "sha256": "74f89918dfbad85cf07a839b70b8810b5a232734b3ff0a0c5e3b678c513840de",
+      "bytes": 46805
+    },
+    {
+      "name": "applevel-consistency.html",
+      "url": "https://www.postgresql.org/docs/16/applevel-consistency.html",
+      "sha256": "da12e0f6df41ccbe07921431c02ffa7c3ab67de2b60d5b38510ef3268b06a310",
+      "bytes": 23938
+    },
+    {
+      "name": "mvcc-serialization-failure-handling.html",
+      "url": "https://www.postgresql.org/docs/16/mvcc-serialization-failure-handling.html",
+      "sha256": "bf0b3f1a95e86363f462481a9758abd87ab9b3b42d54a3ffe7ba669a3d62b866",
+      "bytes": 13443
+    },
+    {
+      "name": "mvcc-caveats.html",
+      "url": "https://www.postgresql.org/docs/16/mvcc-caveats.html",
+      "sha256": "1d0f43b46b060cb717cc992d8a49812f9d49336d738d0dc4f0ae514c926701d6",
+      "bytes": 14587
+    },
+    {
+      "name": "locking-indexes.html",
+      "url": "https://www.postgresql.org/docs/16/locking-indexes.html",
+      "sha256": "41edc00d62b125734cf83b766e876423f5bfeb7b45191322fab8c66ebc8e7da4",
+      "bytes": 16249
+    },
+    {
+      "name": "performance-tips.html",
+      "url": "https://www.postgresql.org/docs/16/performance-tips.html",
+      "sha256": "7265a1969b1d59043f9f47c77915d1392cb786d6269b915eb28bcb16679f2099",
+      "bytes": 17684
+    },
+    {
+      "name": "using-explain.html",
+      "url": "https://www.postgresql.org/docs/16/using-explain.html",
+      "sha256": "36477db3a84d99c0b912f8ff9ead093f69a0b464af964e880f019d2bffe26ac7",
+      "bytes": 58647
+    },
+    {
+      "name": "planner-stats.html",
+      "url": "https://www.postgresql.org/docs/16/planner-stats.html",
+      "sha256": "c895ed15b2d15af0b3091883a99b3a15be6f99fc31b64371dbf9e90bf1e8f3b5",
+      "bytes": 35695
+    },
+    {
+      "name": "explicit-joins.html",
+      "url": "https://www.postgresql.org/docs/16/explicit-joins.html",
+      "sha256": "c5818500485f1b4d8d691afe1df0fc2e25284bf96c1e62239c0322fe482b415c",
+      "bytes": 23781
+    },
+    {
+      "name": "populate.html",
+      "url": "https://www.postgresql.org/docs/16/populate.html",
+      "sha256": "d4c0853119ec2db30853d038c8d75328eb53cff6e982a97a025f947b4bfad78d",
+      "bytes": 31662
+    },
+    {
+      "name": "non-durability.html",
+      "url": "https://www.postgresql.org/docs/16/non-durability.html",
+      "sha256": "979d2b743553841c770ccd28735cdee069a810ebb8ada33939e9de5ac342d45e",
+      "bytes": 15257
+    },
+    {
+      "name": "parallel-query.html",
+      "url": "https://www.postgresql.org/docs/16/parallel-query.html",
+      "sha256": "0f409d4660e9401b8ddfcb31917877ec9fbf237b66605af394152a8005c94101",
+      "bytes": 13954
+    },
+    {
+      "name": "how-parallel-query-works.html",
+      "url": "https://www.postgresql.org/docs/16/how-parallel-query-works.html",
+      "sha256": "380be531e794fd21664287211df900cdf88d59e9452ab22a868fa1e0c4c390e2",
+      "bytes": 16447
+    },
+    {
+      "name": "when-can-parallel-query-be-used.html",
+      "url": "https://www.postgresql.org/docs/16/when-can-parallel-query-be-used.html",
+      "sha256": "ecf5f42784c9c43b0d61b99fd261b6ceca20982f0e8822df004015d6e9b980e2",
+      "bytes": 17910
+    },
+    {
+      "name": "parallel-plans.html",
+      "url": "https://www.postgresql.org/docs/16/parallel-plans.html",
+      "sha256": "b99533f098524ca23f9bb733f920ebc87cd6ae35b7f7f2c32549393214c687f2",
+      "bytes": 23918
+    },
+    {
+      "name": "parallel-safety.html",
+      "url": "https://www.postgresql.org/docs/16/parallel-safety.html",
+      "sha256": "3e752877333440c09b86744b7e317995f7ece4a7070d06720a1902687b83e412",
+      "bytes": 17616
+    },
+    {
+      "name": "runtime-config.html",
+      "url": "https://www.postgresql.org/docs/16/runtime-config.html",
+      "sha256": "454ddc88575de7859df7cad25b8aa30fe9631679c447fd07d67c888f2e8795ee",
+      "bytes": 23946
+    },
+    {
+      "name": "config-setting.html",
+      "url": "https://www.postgresql.org/docs/16/config-setting.html",
+      "sha256": "ff7da738d681ed638d6ba7a5e1b21519c1844147e519d97d04dbc35075eabc74",
+      "bytes": 35190
+    },
+    {
+      "name": "runtime-config-file-locations.html",
+      "url": "https://www.postgresql.org/docs/16/runtime-config-file-locations.html",
+      "sha256": "fbae33cfd5de3e814e73259e8b686ac9e461ab5ffddb7a1ccab6719d5c922d19",
+      "bytes": 18925
+    },
+    {
+      "name": "runtime-config-connection.html",
+      "url": "https://www.postgresql.org/docs/16/runtime-config-connection.html",
+      "sha256": "304947fef42699a2530f101a66234de860ff57456071a9c19eecef17ec694e3d",
+      "bytes": 58807
+    },
+    {
+      "name": "runtime-config-resource.html",
+      "url": "https://www.postgresql.org/docs/16/runtime-config-resource.html",
+      "sha256": "83e2b5131ac8576b32637e37528afe203c02b74d314e4eea164d09d8cd1b9c0e",
+      "bytes": 70773
+    },
+    {
+      "name": "runtime-config-wal.html",
+      "url": "https://www.postgresql.org/docs/16/runtime-config-wal.html",
+      "sha256": "cfaf51424e416469688b54ca97cb5a80b2078790af817422da1a5226dc6b5354",
+      "bytes": 79733
+    },
+    {
+      "name": "runtime-config-replication.html",
+      "url": "https://www.postgresql.org/docs/16/runtime-config-replication.html",
+      "sha256": "a12ed033b172ae23b1cc387b20300d26aabdb9dc876445d52a282de7d1f69994",
+      "bytes": 55435
+    },
+    {
+      "name": "runtime-config-query.html",
+      "url": "https://www.postgresql.org/docs/16/runtime-config-query.html",
+      "sha256": "e98d95818dbf375ee19267871319a3c518797533efdf626376aa1cbd88ad7b87",
+      "bytes": 58841
+    },
+    {
+      "name": "runtime-config-logging.html",
+      "url": "https://www.postgresql.org/docs/16/runtime-config-logging.html",
+      "sha256": "bf8d36fa07484ddb67d8f1e3e1c48adff87a558e6c4d33dabe18a41db34c1858",
+      "bytes": 93920
+    },
+    {
+      "name": "runtime-config-statistics.html",
+      "url": "https://www.postgresql.org/docs/16/runtime-config-statistics.html",
+      "sha256": "941e0a9377191b616b10f0afd77610691d20354219e0c577ab44ef95fac5b616",
+      "bytes": 27052
+    },
+    {
+      "name": "runtime-config-autovacuum.html",
+      "url": "https://www.postgresql.org/docs/16/runtime-config-autovacuum.html",
+      "sha256": "a7f3d38620007006e7819ac51cf5afbeffdb08d333c0a7d9ae43bc6ec7ab9b28",
+      "bytes": 26316
+    },
+    {
+      "name": "runtime-config-client.html",
+      "url": "https://www.postgresql.org/docs/16/runtime-config-client.html",
+      "sha256": "014900bcd509075b5e20fa6bb5e7aeb1138d18242e55d06ffde7852db76e7057",
+      "bytes": 83479
+    },
+    {
+      "name": "runtime-config-locks.html",
+      "url": "https://www.postgresql.org/docs/16/runtime-config-locks.html",
+      "sha256": "856c054f389e8af9d5a1de5f947cf49a4de476943f3d972bb93fa03cbb676dc4",
+      "bytes": 19682
+    },
+    {
+      "name": "runtime-config-compatible.html",
+      "url": "https://www.postgresql.org/docs/16/runtime-config-compatible.html",
+      "sha256": "c341b0f77fc117662f9a52fec74095563d044ef10be54bdcdd5e140368048f2b",
+      "bytes": 26322
+    },
+    {
+      "name": "runtime-config-error-handling.html",
+      "url": "https://www.postgresql.org/docs/16/runtime-config-error-handling.html",
+      "sha256": "bad3477002434cc7056d74047a8d6b5db2d873f7a074b85d69e314c55767c5cc",
+      "bytes": 17632
+    },
+    {
+      "name": "runtime-config-preset.html",
+      "url": "https://www.postgresql.org/docs/16/runtime-config-preset.html",
+      "sha256": "6bbb3844043c38383fd1ec10e891eee64669ec9f8511375406dc67ec4aaf828b",
+      "bytes": 25133
+    },
+    {
+      "name": "runtime-config-custom.html",
+      "url": "https://www.postgresql.org/docs/16/runtime-config-custom.html",
+      "sha256": "cd9671aca1b36234d14d4df17e28b936aa1fdda4278456f0c02982c1539c535f",
+      "bytes": 14726
+    },
+    {
+      "name": "runtime-config-developer.html",
+      "url": "https://www.postgresql.org/docs/16/runtime-config-developer.html",
+      "sha256": "3f5a8b1f51bfacde94037e22e53ac6ee124aacb41acb674b845043fdb235da17",
+      "bytes": 47069
+    },
+    {
+      "name": "runtime-config-short.html",
+      "url": "https://www.postgresql.org/docs/16/runtime-config-short.html",
+      "sha256": "fcd694036bf0cede2d71c712f425836b299f8677d4b3ec71f6a93770bdcbfac5",
+      "bytes": 18646
+    },
+    {
+      "name": "client-authentication.html",
+      "url": "https://www.postgresql.org/docs/16/client-authentication.html",
+      "sha256": "55bbbd0cf7865fca8f07954f0cf90898a197ab31040f6c42c2c0815a0a2d72b0",
+      "bytes": 18836
+    },
+    {
+      "name": "auth-pg-hba-conf.html",
+      "url": "https://www.postgresql.org/docs/16/auth-pg-hba-conf.html",
+      "sha256": "fbc563f34978a03822c2b8e6c9e44feee78c3d3139d9b9d2565e219a7f9504c2",
+      "bytes": 52048
+    },
+    {
+      "name": "auth-username-maps.html",
+      "url": "https://www.postgresql.org/docs/16/auth-username-maps.html",
+      "sha256": "ad957e48e5aa6d1c3362769c09a303ef9b056dfd0e8e138f41cd26768690ae6f",
+      "bytes": 22371
+    },
+    {
+      "name": "auth-methods.html",
+      "url": "https://www.postgresql.org/docs/16/auth-methods.html",
+      "sha256": "5ac31f852dea92f9bfef39d698c7b989a19d0d2c587ed146bd33ff55a1ed2780",
+      "bytes": 18068
+    },
+    {
+      "name": "auth-trust.html",
+      "url": "https://www.postgresql.org/docs/16/auth-trust.html",
+      "sha256": "d21a406cb47a289a37e2e8215010a543bbc0334161a63036a43248f110a4bba5",
+      "bytes": 13540
+    },
+    {
+      "name": "auth-password.html",
+      "url": "https://www.postgresql.org/docs/16/auth-password.html",
+      "sha256": "cae0eaf0812c0f2fc8e539c8b94257eb1f96cee4bb4daabd0f829f6d9bca729d",
+      "bytes": 16847
+    },
+    {
+      "name": "gssapi-auth.html",
+      "url": "https://www.postgresql.org/docs/16/gssapi-auth.html",
+      "sha256": "ec971530c95c2e76f2ddb9a3b15d5b538b54dd0321d2fb8e23e3069b4ec662ad",
+      "bytes": 19219
+    },
+    {
+      "name": "sspi-auth.html",
+      "url": "https://www.postgresql.org/docs/16/sspi-auth.html",
+      "sha256": "3e7b4669045cba58ef44e7605cee720387f46eff885df9b0c2183891a27107e3",
+      "bytes": 15873
+    },
+    {
+      "name": "auth-ident.html",
+      "url": "https://www.postgresql.org/docs/16/auth-ident.html",
+      "sha256": "bada7ffc617e2a91a85e2468665efd6bdd6427214fb0db9b6285fa7c88732bdc",
+      "bytes": 14847
+    },
+    {
+      "name": "auth-peer.html",
+      "url": "https://www.postgresql.org/docs/16/auth-peer.html",
+      "sha256": "6df73488fce297e1d22fdad79a06caa13e1d34fa9fd0de6d8d4f927ca8377aeb",
+      "bytes": 12379
+    },
+    {
+      "name": "auth-ldap.html",
+      "url": "https://www.postgresql.org/docs/16/auth-ldap.html",
+      "sha256": "02564e90a21a1f44f89405c74b4a8ad28e19409c09166cf6f0fcce9801417479",
+      "bytes": 23167
+    },
+    {
+      "name": "auth-radius.html",
+      "url": "https://www.postgresql.org/docs/16/auth-radius.html",
+      "sha256": "a4471ebd724ccc1fe30937ab268184fdc84da93124528d9c52223147e5dd8b8a",
+      "bytes": 15242
+    },
+    {
+      "name": "auth-cert.html",
+      "url": "https://www.postgresql.org/docs/16/auth-cert.html",
+      "sha256": "90d5f52e24f515d1d01f94173740607a5a7176d51d729ec08c45bb95e5d8c1bc",
+      "bytes": 12917
+    },
+    {
+      "name": "auth-pam.html",
+      "url": "https://www.postgresql.org/docs/16/auth-pam.html",
+      "sha256": "d8e8adeb53ddb66cf104d491f834177ca23213c3790264ea83e9bec9e4aab3e2",
+      "bytes": 13083
+    },
+    {
+      "name": "auth-bsd.html",
+      "url": "https://www.postgresql.org/docs/16/auth-bsd.html",
+      "sha256": "b52f02b210a3e0612e1cbfd0db99cdad6db39ca8e8ac0cbcebbdd290581a03a4",
+      "bytes": 12434
+    },
+    {
+      "name": "client-authentication-problems.html",
+      "url": "https://www.postgresql.org/docs/16/client-authentication-problems.html",
+      "sha256": "54a90df7941a4f2113680e3ec00f603b0190ef1ace2b5f942274d9737d5dd394",
+      "bytes": 16740
+    },
+    {
+      "name": "user-manag.html",
+      "url": "https://www.postgresql.org/docs/16/user-manag.html",
+      "sha256": "3f3442b474683bc621123cfb6e7b0a5fb4d71826ba4bd50371eef291f8d3ba0d",
+      "bytes": 16237
+    },
+    {
+      "name": "database-roles.html",
+      "url": "https://www.postgresql.org/docs/16/database-roles.html",
+      "sha256": "d19598cc26724c9b2b71f93bfc5e079031503a1c9732c4308297671ccdc074fd",
+      "bytes": 17655
+    },
+    {
+      "name": "role-attributes.html",
+      "url": "https://www.postgresql.org/docs/16/role-attributes.html",
+      "sha256": "44128e110c4a012337320a3cce3776c15508ad4214e3f2e8255ffc32c677f847",
+      "bytes": 24116
+    },
+    {
+      "name": "role-membership.html",
+      "url": "https://www.postgresql.org/docs/16/role-membership.html",
+      "sha256": "9f14f92b78c0e6c80757ce34bb754da0a0bc28cbc671eecc04e26380bc3a1232",
+      "bytes": 20062
+    },
+    {
+      "name": "role-removal.html",
+      "url": "https://www.postgresql.org/docs/16/role-removal.html",
+      "sha256": "a57e8319760f03c8902175f8924528a4e3df142d235c4dfe5e71d91e977a1556",
+      "bytes": 15311
+    },
+    {
+      "name": "predefined-roles.html",
+      "url": "https://www.postgresql.org/docs/16/predefined-roles.html",
+      "sha256": "609e680707f26dfa7ac7ebbe0247ad89961e86a4c84f077b52abafd008cb40c4",
+      "bytes": 18454
+    },
+    {
+      "name": "perm-functions.html",
+      "url": "https://www.postgresql.org/docs/16/perm-functions.html",
+      "sha256": "2db1629ca7a699340627bd7fafdebc104513cd2e468066a8d31845bfae268649",
+      "bytes": 15509
+    },
+    {
+      "name": "managing-databases.html",
+      "url": "https://www.postgresql.org/docs/16/managing-databases.html",
+      "sha256": "8072a259fe31a49a46e49115b646f56ee67c067d096586f70499f3396501ddde",
+      "bytes": 15828
+    },
+    {
+      "name": "manage-ag-overview.html",
+      "url": "https://www.postgresql.org/docs/16/manage-ag-overview.html",
+      "sha256": "bb91a54d366009603623a1ec72c4bc7eb8dfecbb9fb30a2cbc5a4e2cf9de7e6c",
+      "bytes": 17234
+    },
+    {
+      "name": "manage-ag-createdb.html",
+      "url": "https://www.postgresql.org/docs/16/manage-ag-createdb.html",
+      "sha256": "0a63cdf86f1e51eb6333107c24fad558d68a6afd7962eb4ae4a6764f0ac112a2",
+      "bytes": 18996
+    },
+    {
+      "name": "manage-ag-templatedbs.html",
+      "url": "https://www.postgresql.org/docs/16/manage-ag-templatedbs.html",
+      "sha256": "9ae3a934fd337f470e03a7c1575147270b6c7a4134eb291b633b5d414941e246",
+      "bytes": 20390
+    },
+    {
+      "name": "manage-ag-config.html",
+      "url": "https://www.postgresql.org/docs/16/manage-ag-config.html",
+      "sha256": "f2360403384f40e25b542ff018da4163f50f58d5223842f54fe7e6c9d268b763",
+      "bytes": 15517
+    },
+    {
+      "name": "manage-ag-dropdb.html",
+      "url": "https://www.postgresql.org/docs/16/manage-ag-dropdb.html",
+      "sha256": "e62edb73f4fb07d74a9748c43af2243ca8fa052cf9b28b15c99690f4f97a78e7",
+      "bytes": 15908
+    },
+    {
+      "name": "manage-ag-tablespaces.html",
+      "url": "https://www.postgresql.org/docs/16/manage-ag-tablespaces.html",
+      "sha256": "d9d970c2dd4ef83e52628eaa961a1c59b1b03498b0f91d377f069d5d06fb1917",
+      "bytes": 21205
+    },
+    {
+      "name": "maintenance.html",
+      "url": "https://www.postgresql.org/docs/16/maintenance.html",
+      "sha256": "19961170fd010bbba02ed315df95049690ab2d559a6827e3a1feb307a83a95d6",
+      "bytes": 18534
+    },
+    {
+      "name": "routine-vacuuming.html",
+      "url": "https://www.postgresql.org/docs/16/routine-vacuuming.html",
+      "sha256": "28d894f129619c1a056d364172db439cf17f97f3351d567069bd4d47134a7f1c",
+      "bytes": 66253
+    },
+    {
+      "name": "routine-reindex.html",
+      "url": "https://www.postgresql.org/docs/16/routine-reindex.html",
+      "sha256": "33385711934e580871fb6dd0a59d6e0f07a2852e34b52fd3353465ac2fa0fc7a",
+      "bytes": 15770
+    },
+    {
+      "name": "logfile-maintenance.html",
+      "url": "https://www.postgresql.org/docs/16/logfile-maintenance.html",
+      "sha256": "73830d03a06990324d15e418b6310cef5c7710e92fc0f9927f4910f0813a6c49",
+      "bytes": 21572
+    },
+    {
+      "name": "backup.html",
+      "url": "https://www.postgresql.org/docs/16/backup.html",
+      "sha256": "97a5820eeed9de04bbd184fa7a65b8fcb5c047e1a9041891f3141a503df25b84",
+      "bytes": 17154
+    },
+    {
+      "name": "backup-dump.html",
+      "url": "https://www.postgresql.org/docs/16/backup-dump.html",
+      "sha256": "6c7c8b7e98ba4065000dfa345140fcf32f522a5a6904a09cc1a7216012fade90",
+      "bytes": 29822
+    },
+    {
+      "name": "backup-file.html",
+      "url": "https://www.postgresql.org/docs/16/backup-file.html",
+      "sha256": "d925fc0652975527d6935c806b1602000f9b12dc0a4e02922ed747e0b225b6e4",
+      "bytes": 20189
+    },
+    {
+      "name": "continuous-archiving.html",
+      "url": "https://www.postgresql.org/docs/16/continuous-archiving.html",
+      "sha256": "86695073e30e1f8f9d9b26c03cca1db04c0a27453b794f4c0b57a171c1023ab2",
+      "bytes": 69255
+    },
+    {
+      "name": "high-availability.html",
+      "url": "https://www.postgresql.org/docs/16/high-availability.html",
+      "sha256": "d71f5bc5b3c5dfa87b0789040b897d971842da059f3d457ecf0843f3d7a71760",
+      "bytes": 20397
+    },
+    {
+      "name": "different-replication-solutions.html",
+      "url": "https://www.postgresql.org/docs/16/different-replication-solutions.html",
+      "sha256": "153ebda3edfba668742638b8e021c5da53e0e82fdfb7d9bf80fca53ad1bd84a6",
+      "bytes": 29081
+    },
+    {
+      "name": "warm-standby.html",
+      "url": "https://www.postgresql.org/docs/16/warm-standby.html",
+      "sha256": "8444275d39967450b726a7d8d8b8b6af51ef6fccbd4b439368b97d6b9e3d040a",
+      "bytes": 62586
+    },
+    {
+      "name": "warm-standby-failover.html",
+      "url": "https://www.postgresql.org/docs/16/warm-standby-failover.html",
+      "sha256": "82b7ccd8241bb7b2b576c42fd311953a6d9b4b36bdc85b0b080e390c567ea99d",
+      "bytes": 15976
+    },
+    {
+      "name": "hot-standby.html",
+      "url": "https://www.postgresql.org/docs/16/hot-standby.html",
+      "sha256": "c070ce18cce14c4db7e2736a13fc169c8958a212e5ca50996a65667143c88168",
+      "bytes": 51530
+    },
+    {
+      "name": "monitoring.html",
+      "url": "https://www.postgresql.org/docs/16/monitoring.html",
+      "sha256": "2dbfaf63668d895455b5ca676317d8312618ae1b1fecbf704918861289d9e068",
+      "bytes": 22195
+    },
+    {
+      "name": "monitoring-ps.html",
+      "url": "https://www.postgresql.org/docs/16/monitoring-ps.html",
+      "sha256": "5e202a645fa2bb3ea87a456efaf7b2d09e6413ff7bf5c99b176dcca48bfca548",
+      "bytes": 17938
+    },
+    {
+      "name": "monitoring-stats.html",
+      "url": "https://www.postgresql.org/docs/16/monitoring-stats.html",
+      "sha256": "742d43358d9ea3e99f093f49fbeaa15b27bb56883591c6f121f83add2b9d7fbd",
+      "bytes": 268001
+    },
+    {
+      "name": "monitoring-locks.html",
+      "url": "https://www.postgresql.org/docs/16/monitoring-locks.html",
+      "sha256": "f152f9276975cf0cf85f3542ababa91fd6918de6db7acbc14310d4cb34b46314",
+      "bytes": 15490
+    },
+    {
+      "name": "progress-reporting.html",
+      "url": "https://www.postgresql.org/docs/16/progress-reporting.html",
+      "sha256": "e3f9e9dc43d029085b114cc4eb5d9eb697aa22e24d20d2cb6cad2e8a885b5a71",
+      "bytes": 64091
+    },
+    {
+      "name": "dynamic-trace.html",
+      "url": "https://www.postgresql.org/docs/16/dynamic-trace.html",
+      "sha256": "91fb81543db0fe37759c20296d8f58ac89aeec2559725b558218524e58d65784",
+      "bytes": 47339
+    },
+    {
+      "name": "diskusage.html",
+      "url": "https://www.postgresql.org/docs/16/diskusage.html",
+      "sha256": "d4f21d4084e3501eb2b97202861c3f283e43a9e46afd2e27eb4b4670dc93c5f7",
+      "bytes": 14483
+    },
+    {
+      "name": "disk-usage.html",
+      "url": "https://www.postgresql.org/docs/16/disk-usage.html",
+      "sha256": "aef1e91da0413a8d2adad855091c845f2f052e2c8b3c29193f3bebbaaa618cab",
+      "bytes": 15547
+    },
+    {
+      "name": "disk-full.html",
+      "url": "https://www.postgresql.org/docs/16/disk-full.html",
+      "sha256": "61325e8dca8f16637327aa018fbb480e17a6559d5d0a6a3d0c7b0930d39b2147",
+      "bytes": 13806
+    },
+    {
+      "name": "wal.html",
+      "url": "https://www.postgresql.org/docs/16/wal.html",
+      "sha256": "086e9adb03e72bb11f00d65fce88fcaf4c7e513b3dc9739f6e28f93a1680577d",
+      "bytes": 15801
+    },
+    {
+      "name": "wal-reliability.html",
+      "url": "https://www.postgresql.org/docs/16/wal-reliability.html",
+      "sha256": "c87ed7f2ceefdb5561bf500349543727940e2ba1f71a5e283288f5cb615c0824",
+      "bytes": 24291
+    },
+    {
+      "name": "checksums.html",
+      "url": "https://www.postgresql.org/docs/16/checksums.html",
+      "sha256": "08ebf03cc5573928bd6b7cd401beb9767eaa475f5e1b1bf2378d449cdb8939e8",
+      "bytes": 12528
+    },
+    {
+      "name": "wal-intro.html",
+      "url": "https://www.postgresql.org/docs/16/wal-intro.html",
+      "sha256": "2846ea001327ce94414bca5afe66491780a5ec891c026d86f0730ae0103e63ca",
+      "bytes": 16621
+    },
+    {
+      "name": "wal-async-commit.html",
+      "url": "https://www.postgresql.org/docs/16/wal-async-commit.html",
+      "sha256": "8a4dd85ff6de285c9fabe7570402abc5aaeae8fb7424ffef2055be824ef2aee3",
+      "bytes": 19513
+    },
+    {
+      "name": "wal-configuration.html",
+      "url": "https://www.postgresql.org/docs/16/wal-configuration.html",
+      "sha256": "79a43ff2204f2bfd5cb18873698fb9d8c0dd0b52ea2700494ee360cf36a86eb1",
+      "bytes": 35440
+    },
+    {
+      "name": "wal-internals.html",
+      "url": "https://www.postgresql.org/docs/16/wal-internals.html",
+      "sha256": "0ce22a30cc624c6cb1495cadcc170c00ccf4103875526d783c87d7a762447add",
+      "bytes": 18260
+    },
+    {
+      "name": "logical-replication.html",
+      "url": "https://www.postgresql.org/docs/16/logical-replication.html",
+      "sha256": "30780dae23dc6165d5222595f945a7141e0a1c00f91ee6ffc1112df74261d196",
+      "bytes": 18566
+    },
+    {
+      "name": "logical-replication-publication.html",
+      "url": "https://www.postgresql.org/docs/16/logical-replication-publication.html",
+      "sha256": "2b49507fcd89139944d0787ee69db377919f11000657d06c1d6e5c9e47830916",
+      "bytes": 15803
+    },
+    {
+      "name": "logical-replication-subscription.html",
+      "url": "https://www.postgresql.org/docs/16/logical-replication-subscription.html",
+      "sha256": "48bff80c4517cf309d88afeb6fd0bdb978b6f55a71a33978bb26c1287d8332f6",
+      "bytes": 30778
+    },
+    {
+      "name": "logical-replication-row-filter.html",
+      "url": "https://www.postgresql.org/docs/16/logical-replication-row-filter.html",
+      "sha256": "3c91c20a57e6afe2d50ad257834fddd8dff75dfac8f8f0caf40d885d0dc7ef37",
+      "bytes": 34149
+    },
+    {
+      "name": "logical-replication-col-lists.html",
+      "url": "https://www.postgresql.org/docs/16/logical-replication-col-lists.html",
+      "sha256": "75ab675a3b019141249c5e64347d0627175dc3eeb527317f01e4fcf55b2859a8",
+      "bytes": 18025
+    },
+    {
+      "name": "logical-replication-conflicts.html",
+      "url": "https://www.postgresql.org/docs/16/logical-replication-conflicts.html",
+      "sha256": "d719d8c14d7f75fd27aa8370bc8bc155ef68c29905b6e62971adc2c5807da2ff",
+      "bytes": 16039
+    },
+    {
+      "name": "logical-replication-restrictions.html",
+      "url": "https://www.postgresql.org/docs/16/logical-replication-restrictions.html",
+      "sha256": "70c5eac3fb4e96f7ccaa6cef247818937af8a2ccbfdba98935d3f4c04b15262e",
+      "bytes": 15539
+    },
+    {
+      "name": "logical-replication-architecture.html",
+      "url": "https://www.postgresql.org/docs/16/logical-replication-architecture.html",
+      "sha256": "54808a0eb0e2ba666b5c9d791b7b1577e94c72f9bde9c82c0d1be9ee813f778c",
+      "bytes": 15851
+    },
+    {
+      "name": "logical-replication-monitoring.html",
+      "url": "https://www.postgresql.org/docs/16/logical-replication-monitoring.html",
+      "sha256": "dd4097c1815b0e6df1537ffff0d27b93b41d81576d99cacacccee5eb6ef718b0",
+      "bytes": 12962
+    },
+    {
+      "name": "logical-replication-security.html",
+      "url": "https://www.postgresql.org/docs/16/logical-replication-security.html",
+      "sha256": "148298d6cc35328c64f1d7ea29c6b7ba9b5e586fffafb5d8632ecf1143de6625",
+      "bytes": 16006
+    },
+    {
+      "name": "logical-replication-config.html",
+      "url": "https://www.postgresql.org/docs/16/logical-replication-config.html",
+      "sha256": "7104679d8a42bf3ca0105c137b2786a529e475ba866fe85300a58215e0c29d4b",
+      "bytes": 16193
+    },
+    {
+      "name": "logical-replication-quick-setup.html",
+      "url": "https://www.postgresql.org/docs/16/logical-replication-quick-setup.html",
+      "sha256": "6c26cecf7b236ff469dd5c9fd6dc8c2d93428b80a61958aa52c61375ef87c4e0",
+      "bytes": 12821
+    },
+    {
+      "name": "storage.html",
+      "url": "https://www.postgresql.org/docs/16/storage.html",
+      "sha256": "da3ee2bcbc27ef89dd0903325bbe5598069384178871e02c803077256d0a285c",
+      "bytes": 15627
+    },
+    {
+      "name": "storage-file-layout.html",
+      "url": "https://www.postgresql.org/docs/16/storage-file-layout.html",
+      "sha256": "8801f4f43475b77118dda59eca55618b8842bf5b63ad00a2f71acb1637a0d72e",
+      "bytes": 27006
+    },
+    {
+      "name": "storage-toast.html",
+      "url": "https://www.postgresql.org/docs/16/storage-toast.html",
+      "sha256": "4352606293a0b3d0393a3d8e55321367bebbb132669a254aad10b9501e8fb22d",
+      "bytes": 30609
+    },
+    {
+      "name": "storage-fsm.html",
+      "url": "https://www.postgresql.org/docs/16/storage-fsm.html",
+      "sha256": "889b55b8913364e810b17df96db14e62564d93a5ad7b7ed18406aaed6283442d",
+      "bytes": 14403
+    },
+    {
+      "name": "storage-vm.html",
+      "url": "https://www.postgresql.org/docs/16/storage-vm.html",
+      "sha256": "588fb25e79c46b5afd6429cc0d9737af313b8c7a63b5752e06827de12baea77b",
+      "bytes": 14495
+    },
+    {
+      "name": "storage-init.html",
+      "url": "https://www.postgresql.org/docs/16/storage-init.html",
+      "sha256": "a408fd807ce7c296e9ace7732b472878aef86e0d2a80fb377184651c9d4a24af",
+      "bytes": 12998
+    },
+    {
+      "name": "storage-page-layout.html",
+      "url": "https://www.postgresql.org/docs/16/storage-page-layout.html",
+      "sha256": "7d1bd135aebed3e56b620b47c626a7f044a53f82ec7f29ecfaf1c8edd31a3d54",
+      "bytes": 29021
+    },
+    {
+      "name": "storage-hot.html",
+      "url": "https://www.postgresql.org/docs/16/storage-hot.html",
+      "sha256": "897b2f934db2796c9791a530cba40a5ed8c3829494678ebb9c554b0f6feb2ec6",
+      "bytes": 14172
+    },
+    {
+      "name": "btree.html",
+      "url": "https://www.postgresql.org/docs/16/btree.html",
+      "sha256": "acaada79e9d5c3b86fe267f9d10f539b6926879aa9095d198ba3f3223e013b56",
+      "bytes": 12124
+    },
+    {
+      "name": "btree-intro.html",
+      "url": "https://www.postgresql.org/docs/16/btree-intro.html",
+      "sha256": "a445cb9d725f725f7d434e1cbdb97ea122e603460a891b1fab2baad2d39ed12a",
+      "bytes": 10880
+    },
+    {
+      "name": "btree-behavior.html",
+      "url": "https://www.postgresql.org/docs/16/btree-behavior.html",
+      "sha256": "51a9eefe7d4051efe969982b873849982dd5f0ff13f1279e3c33f9ee1e5da4c6",
+      "bytes": 17641
+    },
+    {
+      "name": "btree-support-funcs.html",
+      "url": "https://www.postgresql.org/docs/16/btree-support-funcs.html",
+      "sha256": "9a8fd95d0ad2c65aa10b9169123551f42da6f47da0bc83454a3d5e7392d8b983",
+      "bytes": 28962
+    },
+    {
+      "name": "btree-implementation.html",
+      "url": "https://www.postgresql.org/docs/16/btree-implementation.html",
+      "sha256": "84b56bd961276a0ccc76aaa91e1a5cfc9a9a51eeb26802cb3b455ccf38281833",
+      "bytes": 26625
+    },
+    {
+      "name": "gin.html",
+      "url": "https://www.postgresql.org/docs/16/gin.html",
+      "sha256": "63c6debd9805abd7bd4ce306d899b6f18cb8851fd7460cab016dd479d494aed7",
+      "bytes": 13995
+    },
+    {
+      "name": "gin-intro.html",
+      "url": "https://www.postgresql.org/docs/16/gin-intro.html",
+      "sha256": "435c42249bf476f9ebbc18226adb5d4e9cfaeefb4eb0036dbc4d8424a5f2502b",
+      "bytes": 14125
+    },
+    {
+      "name": "gin-builtin-opclasses.html",
+      "url": "https://www.postgresql.org/docs/16/gin-builtin-opclasses.html",
+      "sha256": "c1eb99ffa2e5ede523014bf6bf0319e54718e375a7c69c992b79f04888e5e1ed",
+      "bytes": 14375
+    },
+    {
+      "name": "gin-extensibility.html",
+      "url": "https://www.postgresql.org/docs/16/gin-extensibility.html",
+      "sha256": "8cbef10b81c80bf2f67efc277bdf15ceb4b4161c49bc6e1c9fe4183e2d947f3e",
+      "bytes": 28319
+    },
+    {
+      "name": "gin-implementation.html",
+      "url": "https://www.postgresql.org/docs/16/gin-implementation.html",
+      "sha256": "b50e150cc6580f3b8da1ad522f2727907b1d188f3f7ca0f9e8f46170a5986346",
+      "bytes": 17519
+    },
+    {
+      "name": "gin-tips.html",
+      "url": "https://www.postgresql.org/docs/16/gin-tips.html",
+      "sha256": "afbed4603de779a8bdc1d34f7a061b6ca18b1540d65c24c60b10e584ffd9cfc6",
+      "bytes": 15812
+    },
+    {
+      "name": "gin-limit.html",
+      "url": "https://www.postgresql.org/docs/16/gin-limit.html",
+      "sha256": "3b4b6c60ae88a7e6f4bcf167f02826269d0b3a534fc1984c3072a1007e5af022",
+      "bytes": 12245
+    },
+    {
+      "name": "gin-examples.html",
+      "url": "https://www.postgresql.org/docs/16/gin-examples.html",
+      "sha256": "4e56377adef7698b9997de3a5545a7843ef4f6120689dc22e1856c321d2fdc73",
+      "bytes": 12956
+    },
+    {
+      "name": "gist.html",
+      "url": "https://www.postgresql.org/docs/16/gist.html",
+      "sha256": "826a73ec01f0dd3008a9cc7daab49f14c03b23b7a49b4bda64bb97183ba77090",
+      "bytes": 14818
+    },
+    {
+      "name": "gist-intro.html",
+      "url": "https://www.postgresql.org/docs/16/gist-intro.html",
+      "sha256": "ceff508447d7dcc22654f531ada195fe6f00109766cab12485bd2e7ec1ddc02c",
+      "bytes": 13145
+    },
+    {
+      "name": "gist-builtin-opclasses.html",
+      "url": "https://www.postgresql.org/docs/16/gist-builtin-opclasses.html",
+      "sha256": "9919da774e9bfa4e1ee68a41a688f6b340b2e8b2ea76cb80cdc798b59d60aece",
+      "bytes": 24252
+    },
+    {
+      "name": "gist-extensibility.html",
+      "url": "https://www.postgresql.org/docs/16/gist-extensibility.html",
+      "sha256": "ca508b1687c5f8ddec3dcc95722960479cea46c854a77b84fd9ee463ec663c9c",
+      "bytes": 46929
+    },
+    {
+      "name": "gist-implementation.html",
+      "url": "https://www.postgresql.org/docs/16/gist-implementation.html",
+      "sha256": "fe8e6efc73ec8334c3e881a3e715a296a853ddf10431eb5c915694e723b7b929",
+      "bytes": 14882
+    },
+    {
+      "name": "gist-examples.html",
+      "url": "https://www.postgresql.org/docs/16/gist-examples.html",
+      "sha256": "4b3079c36fbb60d4f22ce31e40511e5fa293c2811f3a13b4273fd6522fea48b3",
+      "bytes": 13848
+    },
+    {
+      "name": "spgist.html",
+      "url": "https://www.postgresql.org/docs/16/spgist.html",
+      "sha256": "c16c21ab216c6f8bbf99cd0f3c259d97abc97508087ec90b5ddb82aca19e412b",
+      "bytes": 13317
+    },
+    {
+      "name": "spgist-intro.html",
+      "url": "https://www.postgresql.org/docs/16/spgist-intro.html",
+      "sha256": "9f75cbf66926f633df9a9361b9c725f39472d8b36a2414f568bda11680376cda",
+      "bytes": 13019
+    },
+    {
+      "name": "spgist-builtin-opclasses.html",
+      "url": "https://www.postgresql.org/docs/16/spgist-builtin-opclasses.html",
+      "sha256": "d02b9696bce880cb41625f86a89587ba36dd9250f3a21e2f33a03f00f5678b2f",
+      "bytes": 20804
+    },
+    {
+      "name": "spgist-extensibility.html",
+      "url": "https://www.postgresql.org/docs/16/spgist-extensibility.html",
+      "sha256": "0caf10f1aa75549f6db3a5417fa5a2f1a32aa84e74db6e29ee688dafe937a707",
+      "bytes": 48602
+    },
+    {
+      "name": "spgist-implementation.html",
+      "url": "https://www.postgresql.org/docs/16/spgist-implementation.html",
+      "sha256": "ac802d87b6855d95a74d50cb18e255a64ed1b59f078a8ac3e2cd29a35d0cb749",
+      "bytes": 18367
+    },
+    {
+      "name": "spgist-examples.html",
+      "url": "https://www.postgresql.org/docs/16/spgist-examples.html",
+      "sha256": "0783cd52c41b1f410efffe176bb9f6e6bb7d3d9e84b7fa56ae72a3a84cdc7110",
+      "bytes": 11509
+    },
+    {
+      "name": "brin.html",
+      "url": "https://www.postgresql.org/docs/16/brin.html",
+      "sha256": "010aca77689eef1341caaf9da6c95858748d692c595ad9169d2ffac7383f00c1",
+      "bytes": 12333
+    },
+    {
+      "name": "brin-intro.html",
+      "url": "https://www.postgresql.org/docs/16/brin-intro.html",
+      "sha256": "d00565b79d30a75dc9b52b9c2fb4b5a4bf6705eb79fe1f167788d3f6bd6d8736",
+      "bytes": 16374
+    },
+    {
+      "name": "brin-builtin-opclasses.html",
+      "url": "https://www.postgresql.org/docs/16/brin-builtin-opclasses.html",
+      "sha256": "edb0f6a9512fd8a05092fb5624bda80028983945b780b7aaeab7bc6bcc2de49a",
+      "bytes": 50375
+    },
+    {
+      "name": "brin-extensibility.html",
+      "url": "https://www.postgresql.org/docs/16/brin-extensibility.html",
+      "sha256": "e891d34520270c619562cab06d4a65cc1af17f9c0b7460b3c55802c9405d991c",
+      "bytes": 31409
+    },
+    {
+      "name": "hash-index.html",
+      "url": "https://www.postgresql.org/docs/16/hash-index.html",
+      "sha256": "eeec737a0e3bdd0336a3339480f5f95c8b7793b861cf1a89a2432020049917c5",
+      "bytes": 11614
+    },
+    {
+      "name": "hash-intro.html",
+      "url": "https://www.postgresql.org/docs/16/hash-intro.html",
+      "sha256": "52c42db4f6fe1c6672abe84dfa55b4eae25be48d61cb2f7abc6c58d2378dfcc7",
+      "bytes": 14199
+    },
+    {
+      "name": "hash-implementation.html",
+      "url": "https://www.postgresql.org/docs/16/hash-implementation.html",
+      "sha256": "6e3cd9445744e100c0a6bd889c977eadba7facd1e521d970d7d3069659fef32a",
+      "bytes": 12220
+    }
+  ]
+}
