@@ -1,5 +1,5 @@
 # rag-eval-pipeline
-
+![ci](https://github.com/nschevokin/rag-eval-pipeline/actions/workflows/ci.yml/badge.svg)
 Question answering over a fixed slice of the PostgreSQL 16 manual, where a new search index serves users only after it passes a measured evaluation gate. Retrieval quality is measured, versioned and enforced by the database, not assumed.
 
 > Status: complete first version. Every number in this README points to a file in `evidence/`.
